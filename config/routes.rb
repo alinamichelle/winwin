@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
 
-
   resources :users do
-    resources :wishlist, only: [:new, :create]
+    resources :messages, only: [ :new, :create]
+    resources :saves, only: [ :create]
+    resources :meetings
+    resources :feedbacks, only: [ :new, :create]
   end
-     #
-  devise_for :users
+
+  devise_for :users, :path => 'accounts'
   root to: 'pages#home'
-  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
