@@ -1,2 +1,2 @@
-class WishlistController < ApplicationController
+class WishlistsController < ApplicationController
 end
