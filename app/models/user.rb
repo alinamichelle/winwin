@@ -4,7 +4,8 @@ class User < ApplicationRecord
   validates :name, presence: true, on: :update
   validates :location, presence: true, on: :update
   validates :birthday, presence: true, on: :update
-  validates_length_of :tagline, :minimum => 15, :maximum => 20, presence: true, on: :update
+  validates_length_of :tagline, :minimum => 10, :maximum => 120, presence: true, on: :update
+  enum gender: [:undisclosed, :female, :male, :other]
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
