@@ -1,15 +1,13 @@
 class UsersController < ApplicationController
-  # def index
-  # end
 
-  # def show
-  #   if user_signed_in?
-  #     @user = current_user
-  #   end
+    def index
+    @users = User.all
+  end
 
-  #   @expertises = Expertise.all
-  #   @wishlists = Wishlist.all
-  #   @saves = Save.all
-  # end
+  def show
+
+    if user_signed_in?
+      @user = current_user
+    end
 
 end
