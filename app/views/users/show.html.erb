@@ -1,0 +1,28 @@
+<h1>This is the User's Profile</h1>
+<h3>Info</h3>
+  <%= @user.name %>
+  <%= @user.birthday %>
+  <%= @user.location %>
+
+<h3>Expertises</h3>
+  <ul>
+    <% @user.expertises.each do |expertise| %>
+      <li><%= user.expertise.experience %></li>
+      <li><%= user.expertise.description %></li>
+    <% end %>
+  </ul>
+
+<h3>Wishlist</h3>
+  <ul>
+    <% @user.wishlists.each do |whishlist| %>
+      <li><%= user.wishlist.description %></li>
+    <% end %>
+  </ul>
+
+<h3>Saves</h3>
+  <ul>
+    <% @user.saves.each do |save| %>
+      <li><%= user.save %></li>
+    <% end %>
+  </ul>
+
