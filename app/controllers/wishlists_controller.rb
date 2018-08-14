@@ -1,5 +1,4 @@
-class WishlistController < ApplicationController
-
+class WishlistsController < ApplicationController
   def create
     @wishlist = Wishlist.find(params[:wishlist_description])
     @user = current_user
@@ -20,5 +19,4 @@ class WishlistController < ApplicationController
     @wishlist.destroy
     redirect_to edit_user_path
   end
-
 end
