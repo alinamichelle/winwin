@@ -8,9 +8,11 @@
 
 <h3>Expertises</h3>
   <ul>
-    <% @user.expertises.each do |expertise| %>
-    <li><%= user.expertise.topic.name %></li>
+    <% unless @user.expertises.nil? %>
+       <% @user.expertises.each do |expertise| %>
+      <li><%= user.expertise.topic.name %></li>
       <li><%= user.expertise.experience %></li>
+    <% end %>
     <% end %>
   </ul>
 
