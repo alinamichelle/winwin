@@ -1,11 +1,12 @@
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
+
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
     <%= f.input :name, required: true %>
-    <%= f.input :email, required: true, autofocus: true %>
+
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
@@ -24,20 +25,20 @@
       <%= f.input :tagline, required: true %>
       <%= f.input :biography, required: true %>
       <label>What can people contact you about and how much would you say you know?</label>
-        <%= f.simple_fields_for :expertise do |ef| %>
+        <%= f.simple_fields_for :experience do |ef| %>
           <%= ef.input :topic, as: :select, collection: Topic.all %>
         <% end %>
         <div class="list in-line">
-          <%= label_tag(:expertise,   "little") %>
-          <%= radio_button_tag(:expertise, "male") %>
-          <%= label_tag(:expertise,   "some") %>
-          <%= radio_button_tag(:expertise, "female") %>
-          <%= label_tag(:expertise,   "a fair amount") %>
-          <%= radio_button_tag(:expertise, "other") %>
-          <%= label_tag(:expertise,   "quite a lot") %>
-          <%= radio_button_tag(:expertise, "female") %>
-          <%= label_tag(:expertise,   "I'm an expert") %>
-          <%= radio_button_tag(:expertise, "other") %>
+          <%= label_tag(:experience,   "little") %>
+          <%= radio_button_tag(:experience, "male") %>
+          <%= label_tag(:experience,   "some") %>
+          <%= radio_button_tag(:experience, "female") %>
+          <%= label_tag(:experience,   "a fair amount") %>
+          <%= radio_button_tag(:experience, "other") %>
+          <%= label_tag(:experience,   "quite a lot") %>
+          <%= radio_button_tag(:experience, "female") %>
+          <%= label_tag(:experience,   "I'm an expert") %>
+          <%= radio_button_tag(:experience, "other") %>
         </div>
     </div>
   </div>
