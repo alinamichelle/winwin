@@ -76,9 +76,14 @@ ActiveRecord::Schema.define(version: 2018_08_15_115959) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "wishes", force: :cascade do |t|
+    t.string "description"
+    t.bigint "wishlist_id"
+    t.index ["wishlist_id"], name: "index_wishes_on_wishlist_id"
+  end
+
   create_table "wishlists", force: :cascade do |t|
     t.bigint "user_id"
-    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_wishlists_on_user_id"
@@ -90,5 +95,6 @@ ActiveRecord::Schema.define(version: 2018_08_15_115959) do
   add_foreign_key "messages", "users", column: "sender_id"
   add_foreign_key "saves", "users", column: "saved_id"
   add_foreign_key "saves", "users", column: "saver_id"
+  add_foreign_key "wishes", "wishlists"
   add_foreign_key "wishlists", "users"
 end
