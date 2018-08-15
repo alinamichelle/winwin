@@ -7,7 +7,8 @@ class UsersController < ApplicationController
 def edit
   @user = User.find(params[:id])
   @wish = Wish.new
-  @wish.user = @user
+    @wish.user = @user
+
 end
 
 def update
@@ -38,6 +39,9 @@ end
   end
 
   private
+  def wishes_params
+    params.require(:wish).permit(:description)
+  end
 
   def strong_params_user
     params.require(:user).permit(:name, :birthday, :location, :tagline, :biography, :gender)

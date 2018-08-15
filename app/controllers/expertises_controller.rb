@@ -3,7 +3,6 @@ class ExpertisesController < ApplicationController
   def create
     @expertise = Expertise.find(params[:topic_id])
     @user = current_user
-    byebug
     if @expertise.save
       render "expertise/show"
     else
