@@ -5,7 +5,7 @@ class WishesController < ApplicationController
   end
 
   def create
-    @wish = Wish.new(wish_params)
+    @wish = Wish.new(wishes_params)
     @wish.user = current_user
     @user = current_user
     if @wish.save
