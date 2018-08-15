@@ -6,7 +6,7 @@ class ExpertisesController < ApplicationController
     @expertise.user = current_user
     @expertise.experience = params["experience"]
     if @expertise.save
-      render @expertise.user
+      redirect_to users_profile_path
     else
       redirect_to edit_user_path(@user)
     end
