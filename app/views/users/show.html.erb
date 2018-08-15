@@ -1,12 +1,13 @@
 <h1>This is the User's Profile</h1>
 <h3>Info</h3>
+  <%= @user.avatar %>
   <%= @user.name %>
   <%= @user.birthday %>
   <%= @user.location %>
   <%= @user.tagline %>
   <%= @user.biography %>
 
-<h3>Expertises</h3>
+<h3>Expertise</h3>
   <ul>
     <% unless @user.expertises.nil? %>
        <% @user.expertises.each do |expertise| %>
