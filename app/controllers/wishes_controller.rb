@@ -9,9 +9,9 @@ class WishesController < ApplicationController
     @wish.user = current_user
     @user = current_user
     if @wish.save
-      render "users/show"
+      redirect_to users_profile_path, notice: 'Great you created a wish!'
     else
-      redirect_to "users/show"
+      redirect_to users_profile_path, alert: 'Your wish was not saved. Please try again'
     end
   end
 
