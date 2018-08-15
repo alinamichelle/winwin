@@ -20,30 +20,29 @@ view calendar (meetings) -->
 
 <h3>Wishlist</h3>
   <ul>
-    <% @user.wishlists.each do |whishlist| %>
-      <li><%= wishlist.description %></li>
+    <% @user.wishes.each do |wish| %>
+      <li><%= wish.description %></li>
     <% end %>
   </ul>
 
 <!-- <h3>Saves</h3>
   <ul>
-    <% @user.saves.each do |favorite| %>
-      <li><%= favorite %></li>
-    <% end %>
+    <#% @user.saves.each do |favorite| %>
+      <li><#%= favorite %></li>
+    <#% end %>
   </ul>
-<!-- <h3>Inbox</h3>
+ <h3>Inbox</h3>
   <ul>
-      <% @user.messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+      <%# @user.messages.each do |message| %>
+        <li><%#= message %></li>
+      <%# end %>
   </ul>
 
 <div class="container">
-  <h2>Modal Example</h2>
-  <!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <h2>Modal Example</h2>-->
+<!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
     Open modal
-  </button>
+  </button>-->
 
   <!-- The Modal -->
   <div class="modal" id="myModal">
