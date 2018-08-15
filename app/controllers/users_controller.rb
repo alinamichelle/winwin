@@ -26,11 +26,15 @@ def update
 end
 
   def show
-    if user_signed_in?
-      @user = current_user
-    end
     @wish = Wish.new
     @wish.user = @user
+    if params[:id] == "id"
+      @wish = Wish.new
+      @wish.user = @user
+      @user = current_user
+    else
+      @user = User.find(params[:id])
+    end
   end
 
   private
