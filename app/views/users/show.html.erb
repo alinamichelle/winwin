@@ -1,18 +1,20 @@
+<!-- view notifications(messages, calendar)
+view messages
+view calendar (meetings) -->
 <h1>This is the User's Profile</h1>
 <h3>Info</h3>
+  <%= @user.avatar_url %>
   <%= @user.name %>
   <%= @user.birthday %>
   <%= @user.location %>
   <%= @user.tagline %>
   <%= @user.biography %>
 
-<h3>Expertises</h3>
+<h3>Expertise</h3>
   <ul>
-    <% unless @user.expertises.nil? %>
-       <% @user.expertises.each do |expertise| %>
-      <li><%= expertise.topic.name %></li>
+    <% @user.expertises.each do |expertise| %>
+    <li><%= expertise.topic.name %></li>
       <li><%= expertise.experience %></li>
-    <% end %>
     <% end %>
   </ul>
 
@@ -25,17 +27,49 @@
 
 <!-- <h3>Saves</h3>
   <ul>
-    <%# @user.saves.each do |save| %>
-      <li><%#= user.save %></li>
-    <%# end %>
-  </ul> -->
-
-<!-- <h3>Inbox</h3>
+    <#% @user.saves.each do |favorite| %>
+      <li><#%= favorite %></li>
+    <#% end %>
+  </ul>
+ <h3>Inbox</h3>
   <ul>
       <%# @user.messages.each do |message| %>
-        <li><%#= user.message %></li>
+        <li><%#= message %></li>
       <%# end %>
-  </ul> -->
+  </ul>
+
+<div class="container">
+  <h2>Modal Example</h2>-->
+<!--  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>-->
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
 
 
 <%= link_to "Messages", "#testModal", "data-toggle" => "modal", class:"btn btn-primary" %>
@@ -53,7 +87,3 @@
 
 
 
-
-<!-- view notifications(messages, calendar)
-view messages
-view calendar (meetings) -->

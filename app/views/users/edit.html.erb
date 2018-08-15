@@ -1,0 +1,32 @@
+<h2>Edit <%= @user.name %></h2>
+<p>I AM HERE</p>
+<%= simple_form_for @user do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, required: true %>
+    <%= f.input :location, required: true %>
+    <%= f.input :birthday, required: true %>
+    <label>what is your gender?</label>
+      <div class="list in-line">
+          <%= label_tag(:gender_male,   "Male") %>
+          <%= radio_button_tag(:gender, "male") %>
+          <%= label_tag(:gender_male,   "Female") %>
+          <%= radio_button_tag(:gender, "female") %>
+          <%= label_tag(:gender_male,   "Other") %>
+          <%= radio_button_tag(:gender, "other") %>
+        <%= f.input :tagline, required: true %>
+        <%= f.input :biography, required: true %>
+      </div>
+    </div>
+
+
+  <div class="form-actions">
+    <%= f.button :submit, "Update" %>
+  </div>
+<% end %>
+
+<%= link_to "Back", :back %>
+
+
+
