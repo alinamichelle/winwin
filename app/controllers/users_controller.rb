@@ -27,8 +27,6 @@ def update
 end
 
   def show
-
-    @user = User.find(params[:id])
     @wish = Wish.new
     @wish.user = @user
     if params[:id] == "id"
