@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'wishes/new'
   resources :users do
     resources :messages, only: [:index, :show, :new, :create]
-
+    resources :wishes, only: [:create]
     resources :saves, only: [ :create]
     resources :meetings
     resources :feedbacks, only: [ :index, :new, :create]
