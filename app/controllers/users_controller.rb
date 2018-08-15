@@ -26,6 +26,12 @@ def update
   end
 end
 
+  def profile
+    @user = current_user
+    @wish = Wish.new
+    @wish.user = @user
+  end
+
   def show
     @wish = Wish.new
     @wish.user = @user
