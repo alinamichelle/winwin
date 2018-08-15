@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
   resources :users do
-    resources :messages, only: [ :new, :create]
+    resources :messages, only: [ :index, :new, :create]
     resources :saves, only: [ :create]
     resources :meetings
-    resources :feedbacks, only: [ :new, :create]
+    resources :feedbacks, only: [ :index, :new, :create]
   end
 
   devise_for :users, controllers: { registrations: "registrations" }, :path => 'accounts'
