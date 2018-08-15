@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   resources :users do
-    resources :messages, only: [ :index, :new, :create]
+    resources :messages, only: [:index, :show, :new, :create]
+
     resources :saves, only: [ :create]
     resources :meetings
     resources :feedbacks, only: [ :index, :new, :create]

@@ -71,6 +71,19 @@ view calendar (meetings) -->
 
 </div>
 
-<%#= render "shared/testmodal" %>
-<%= link_to "ModalTest", "#testModal", "data-toggle" => "modal" %>
+
+<%= link_to "Messages", "#testModal", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%= render "shared/modal_for_message" %>
+
+
+<%= link_to "Saves", "#testSave", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%= render "shared/modal_for_save" %>
+
+<%= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%= render "shared/modal_for_expertise" %>
+
+<%= link_to "Wish List", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%= render "shared/modal_for_wishlist" %>
+
+
 
