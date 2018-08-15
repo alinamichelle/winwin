@@ -1,11 +1,11 @@
 class WishesController < ApplicationController
 
   def new
-    @wish = wish.new
+    @wish = Wish.new
   end
 
   def create
-  @wish = Wish.new(wish_params)
+    @wish = Wish.new(wish_params)
     @wish.user = current_user
     @user = current_user
     if @wish.save
@@ -17,6 +17,12 @@ class WishesController < ApplicationController
 
   def destroy
 
+  end
+
+  private
+
+  def wishes_params
+    params.require(:wish).permit(:description)
   end
 
 

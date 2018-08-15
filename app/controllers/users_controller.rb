@@ -6,6 +6,8 @@ class UsersController < ApplicationController
 
 def edit
   @user = User.find(params[:id])
+  @wish = Wish.new
+  @wish.user = @user
 end
 
 def update
@@ -27,6 +29,8 @@ end
     if user_signed_in?
       @user = current_user
     end
+    @wish = Wish.new
+    @wish.user = @user
   end
 
   private
