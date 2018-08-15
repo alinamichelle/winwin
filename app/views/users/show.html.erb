@@ -10,34 +10,34 @@
   <ul>
     <% unless @user.expertises.nil? %>
        <% @user.expertises.each do |expertise| %>
-      <li><%= user.expertise.topic.name %></li>
-      <li><%= user.expertise.experience %></li>
+      <li><%= expertise.topic.name %></li>
+      <li><%= expertise.experience %></li>
     <% end %>
     <% end %>
   </ul>
 
 <h3>Wishlist</h3>
   <ul>
-    <% @user.wishlists.each do |whishlist| %>
-      <li><%= user.wishlist.description %></li>
+    <% @user.wishes.each do |wish| %>
+      <li><%= wish.description %></li>
     <% end %>
   </ul>
 
-<h3>Saves</h3>
+<!-- <h3>Saves</h3>
   <ul>
-    <% @user.saves.each do |save| %>
-      <li><%= user.save %></li>
-    <% end %>
-  </ul>
+    <%# @user.saves.each do |save| %>
+      <li><%#= user.save %></li>
+    <%# end %>
+  </ul> -->
 
-<h3>Inbox</h3>
+<!-- <h3>Inbox</h3>
   <ul>
-      <% @user.messages.each do |message| %>
-        <li><%= user.message %></li>
-      <% end %>
-  </ul>
+      <%# @user.messages.each do |message| %>
+        <li><%#= user.message %></li>
+      <%# end %>
+  </ul> -->
 
-<%= render "shared/testmodal" %>
+<%#= render "shared/testmodal" %>
 <%= link_to "ModalTest", "#testModal", "data-toggle" => "modal" %>
 
 
