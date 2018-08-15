@@ -2,8 +2,8 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   has_many :expertises
-  has_many :wishes, through: :wishlist
   has_one :wishlist
+  has_many :wishes, through: :wishlist
 
   validates :name, presence: true, on: :update
   validates :location, presence: true, on: :update
