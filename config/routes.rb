@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'wishes/new'
   resources :users do
     resources :messages, only: [:index, :show, :new, :create]
 
