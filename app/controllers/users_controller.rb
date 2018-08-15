@@ -24,9 +24,14 @@ def update
 end
 
   def show
-    if user_signed_in?
+    if params[:id] == "id"
       @user = current_user
+    else
+      @user = User.find(params[:id])
     end
+    # if user_signed_in?
+    #   @user = current_user
+    # end
   end
 
   private
