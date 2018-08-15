@@ -6,6 +6,8 @@ class UsersController < ApplicationController
 
 def edit
   @user = User.find(params[:id])
+  @wish = Wish.new
+  @wish.user = @user
 end
 
 def update
@@ -24,14 +26,15 @@ def update
 end
 
   def show
+    @wish = Wish.new
+    @wish.user = @user
     if params[:id] == "id"
+      @wish = Wish.new
+      @wish.user = @user
       @user = current_user
     else
       @user = User.find(params[:id])
     end
-    # if user_signed_in?
-    #   @user = current_user
-    # end
   end
 
   private
