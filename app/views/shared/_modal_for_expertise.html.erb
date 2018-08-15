@@ -10,14 +10,32 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
+          <div class="list in-line">
+           <label>What can people contact you about and how much would you say you know?</label>
+            <%= simple_form_for [@user, @expertise] do |ef| %>
+            <%= ef.input :topic_id, as: :select, collection: Topic.all %>
+
+        <div class="list in-line">
+          <%= label_tag(:experience,   "little") %>
+          <%= radio_button_tag(:experience, "little") %>
+          <%= label_tag(:experience,   "some") %>
+          <%= radio_button_tag(:experience, "some") %>
+          <%= label_tag(:experience,   "a fair amount") %>
+          <%= radio_button_tag(:experience, "fair") %>
+          <%= label_tag(:experience,   "quite a lot") %>
+          <%= radio_button_tag(:experience, "alot") %>
+          <%= label_tag(:experience,   "I'm an expert") %>
+          <%= radio_button_tag(:experience, "expert") %>
         </div>
+        </div>
+
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
+          <%= ef.button :submit, "Update" %>
 
+        </div>
+    <% end %>
       </div>
     </div>
   </div>

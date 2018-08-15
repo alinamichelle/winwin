@@ -6,9 +6,8 @@ class UsersController < ApplicationController
 
 def edit
   @user = User.find(params[:id])
-  @wish = Wish.new
-    @wish.user = @user
-
+  @expertise = Expertise.new
+  @expertise.user = @user
 end
 
 def update
@@ -30,9 +29,14 @@ end
     @user = current_user
     @wish = Wish.new
     @wish.user = @user
+    @expertise = Expertise.new
+    @expertise.user = @user
   end
 
   def show
+    @user = User.find(params[:id])
+    @expertise = Expertise.new
+    @expertise.user = @user
     @wish = Wish.new
     @wish.user = @user
     if params[:id] == "id"

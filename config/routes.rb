@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'users/profile', to: 'users#profile'
   resources :users do
     resources :messages, only: [:index, :show, :new, :create]
+    resources :expertises, only: [:create]
     resources :wishes, only: [:create]
     resources :saves, only: [ :create]
     resources :meetings
