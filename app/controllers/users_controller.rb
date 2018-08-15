@@ -25,13 +25,33 @@ def update
   end
 end
 
-  def show
-    @user = User.find(params[:id])
+  def profile
+    @user = current_user
+    @wish = Wish.new
+    @wish.user = @user
     @expertise = Expertise.new
     @expertise.user = @user
   end
 
+  def show
+    @user = User.find(params[:id])
+    @expertise = Expertise.new
+    @expertise.user = @user
+    @wish = Wish.new
+    @wish.user = @user
+    if params[:id] == "id"
+      @wish = Wish.new
+      @wish.user = @user
+      @user = current_user
+    else
+      @user = User.find(params[:id])
+    end
+  end
+
   private
+  def wishes_params
+    params.require(:wish).permit(:description)
+  end
 
   def strong_params_user
     params.require(:user).permit(:name, :birthday, :location, :tagline, :biography, :gender)

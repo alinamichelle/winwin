@@ -10,7 +10,10 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          Modal body..
+          <%= simple_form_for [@user, @wish] do |f| %>
+            <%= f.input :description %>
+            <%= f.submit "Create", class: "btn-small" %>
+          <% end %>
         </div>
 
         <!-- Modal footer -->
