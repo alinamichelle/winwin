@@ -1,5 +1,5 @@
 <h2>Edit <%= @user.name %></h2>
-<p>I AM HERE</p>
+
 <%= simple_form_for @user do |f| %>
   <%= f.error_notification %>
 
@@ -25,6 +25,9 @@
     <%= f.button :submit, "Update" %>
   </div>
 <% end %>
+
+<%= link_to "expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%= render "shared/modal_for_expertise" %>
 
 <%= link_to "Back", :back %>
 

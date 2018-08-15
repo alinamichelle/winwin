@@ -6,6 +6,8 @@ class UsersController < ApplicationController
 
 def edit
   @user = User.find(params[:id])
+  @expertise = Expertise.new
+  @expertise.user = @user
 end
 
 def update
@@ -24,9 +26,9 @@ def update
 end
 
   def show
-    if user_signed_in?
-      @user = current_user
-    end
+    @user = User.find(params[:id])
+    @expertise = Expertise.new
+    @expertise.user = @user
   end
 
   private

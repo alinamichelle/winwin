@@ -1,11 +1,12 @@
 class ExpertisesController < ApplicationController
 
   def create
-    @expertise = Expertise.find(params[:topic_id])
-    @user = current_user
-    byebug
+
+    @expertise = Expertise.new(strong_params_expertise)
+    @expertise.user = current_user
+    @expertise.experience = params["experience"]
     if @expertise.save
-      render "expertise/show"
+      render @expertise.user
     else
       redirect_to edit_user_path(@user)
     end
@@ -17,7 +18,7 @@ end
 
   def update
     @expertise = Expertise.find(params[:id])
-    @expertise.update(kitchen_params)
+    @expertise.update(strong_params_expertise)
   end
 
   def destroy
@@ -28,5 +29,8 @@ end
 
   private
 
+  def strong_params_expertise
+    params.require(:expertise).permit(:topic_id, :experience)
+  end
 
 end
