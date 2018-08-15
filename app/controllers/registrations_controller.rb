@@ -5,6 +5,11 @@ class RegistrationsController < Devise::RegistrationsController
   def after_sign_up_path_for(resource)
     '/accounts/edit' # Or :prefix_to_your_route
   end
+
+  def after_edit_user_registration_path_for(resource)
+    '/users/:id'
+  end
+
   def update_resource(resource, params)
     # Require current password if user is trying to change password.
     return super if params["password"]&.present?

@@ -1,37 +1,40 @@
+<!-- view notifications(messages, calendar)
+view messages
+view calendar (meetings) -->
 <h1>This is the User's Profile</h1>
 <h3>Info</h3>
+  <%= @user.avatar %>
   <%= @user.name %>
   <%= @user.birthday %>
   <%= @user.location %>
   <%= @user.tagline %>
   <%= @user.biography %>
 
-<h3>Expertises</h3>
+<h3>Expertise</h3>
   <ul>
     <% @user.expertises.each do |expertise| %>
-    <li><%= user.expertise.topic.name %></li>
-      <li><%= user.expertise.experience %></li>
+    <li><%= expertise.topic.name %></li>
+      <li><%= expertise.experience %></li>
     <% end %>
   </ul>
 
 <h3>Wishlist</h3>
   <ul>
     <% @user.wishlists.each do |whishlist| %>
-      <li><%= user.wishlist.description %></li>
+      <li><%= wishlist.description %></li>
     <% end %>
   </ul>
 
-<h3>Saves</h3>
+<!-- <h3>Saves</h3>
   <ul>
-    <% @user.saves.each do |save| %>
-      <li><%= user.save %></li>
+    <% @user.saves.each do |favorite| %>
+      <li><%= favorite %></li>
     <% end %>
   </ul>
-
-<h3>Inbox</h3>
+<!-- <h3>Inbox</h3>
   <ul>
       <% @user.messages.each do |message| %>
-        <li><%= user.message %></li>
+        <li><%= message %></li>
       <% end %>
   </ul>
 
@@ -69,10 +72,6 @@
 
 </div>
 
-</body>
-</html>
+<%#= render "shared/testmodal" %>
+<%= link_to "ModalTest", "#testModal", "data-toggle" => "modal" %>
 
-
-<!-- view notifications(messages, calendar)
-view messages
-view calendar (meetings) -->
