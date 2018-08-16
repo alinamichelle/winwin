@@ -1,0 +1,81 @@
+.wrapper {
+  position: relative;
+}
+
+
+.container-blue {
+  background-color: rgba(120, 225, 219, 0.61);
+  height: 300px;
+}
+
+
+
+
+.container-profile {
+  height: 300px;
+  position: absolute;
+  top: 200px;
+}
+
+.row-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-avatar {}
+
+
+.profile-info {}
+
+
+.profile-interaction {}
+
+.btn-profile-interaction {}
+
+
+
+
+.container-grey {
+  background-color: rgb(200,200,200);
+  display: flex;
+  margin-top: 150px;
+}
+
+.grey-left-column-content {
+  border: 1px solid black;
+}
+
+.grey-left-area-expertise {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.grey-left-area-wishlist {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.btn-whishlist {}
+
+
+
+.grey-main-content {
+  border: 1px solid black;
+}
+
+.main-content-description {
+  border: 1px solid black;
+}
+
+.main-content-aboutme {
+  border: 1px solid black;
+}
+
+.row-aboutme {}
+
+.aboutme-card {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
