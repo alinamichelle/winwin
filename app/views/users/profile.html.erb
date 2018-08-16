@@ -22,6 +22,9 @@ view calendar (meetings) -->
   <ul>
     <% @user.wishes.each do |wish| %>
       <li><%= wish.description %></li>
+      <%= link_to wish_path(wish), method: :delete, data: { confirm: "Are you sure?" } do %>
+        <i class="fa fa-trash destroy_wish"></i>
+      <% end %>
     <% end %>
   </ul>
 
