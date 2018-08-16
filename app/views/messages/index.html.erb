@@ -1,9 +1,14 @@
 <% @messages.each do |message| %>
+ <div class="container">
+    <div class="row">
   <p>
-    <%#= message.read? ? 'LIDA' : 'NAO LIDA!' %>
-    <%= message.sender.name %>
 
-    <%= link_to 'Ler', user_message_path(current_user, message) %>
+    <%= message.read? ? '✔✔' : '✔' %>
+    <%= message.sender.name %>
+    <%= message.content %>
+    <%= link_to 'see message', user_message_path(current_user, message) %>
   </p>
 <% end %>
+    </div>
+ </div>
 
