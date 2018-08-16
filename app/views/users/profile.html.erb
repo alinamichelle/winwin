@@ -3,12 +3,16 @@ view messages
 view calendar (meetings) -->
 <h1>This is <%= @user.name%>'s profile</h1>
 <h3>Info</h3>
-  <%= @user.avatar_url %>
-  <%= @user.name %>
-  <%= @user.birthday %>
-  <%= @user.location %>
-  <%= @user.tagline %>
-  <%= @user.biography %>
+  <p><%= @user.avatar_url %></p>
+  <p><%= @user.name %></p>
+  <p>Birthday:</p>
+  <p><%= @user.birthday %></p>
+  <p>Location:</p>
+  <p><%= @user.location %></p>
+  <p>Tagline:</p>
+  <p><%= @user.tagline %></p>
+  <h5>Biography</h5>
+  <p><%= @user.biography %></p>
 
 <h3>Expertise</h3>
   <ul>
@@ -17,6 +21,8 @@ view calendar (meetings) -->
       <li><%= expertise.experience %></li>
     <% end %>
   </ul>
+  <%= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
+  <%= render "shared/modal_for_expertise" %>
 
 <h3>Wishlist</h3>
   <ul>
@@ -27,6 +33,9 @@ view calendar (meetings) -->
       <% end %>
     <% end %>
   </ul>
+  <%= link_to "Wish List", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
+  <%= render "shared/modal_for_wishlist" %>
+
 
 <!-- <h3>Saves</h3>
   <ul>
@@ -82,11 +91,11 @@ view calendar (meetings) -->
 <%= link_to "Saves", "#testSave", "data-toggle" => "modal", class:"btn btn-primary" %>
 <%= render "shared/modal_for_save" %>
 
-<%= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
-<%= render "shared/modal_for_expertise" %>
+<%#= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%#= render "shared/modal_for_expertise" %>
 
-<%= link_to "Wish List", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
-<%= render "shared/modal_for_wishlist" %>
+<%#= link_to "Wish List", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%#= render "shared/modal_for_wishlist" %>
 
 
 
