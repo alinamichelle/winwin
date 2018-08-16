@@ -6,8 +6,14 @@ class MessagesController < ApplicationController
 
   def show #conversation
     @message_new = Message.new
-    @user_receiver = User.find(params["user_id"].to_i)
-    @messages = Message.where(receiver: @user_receiver, sender: current_user)
+    message = Message.find(params[:id])
+    if message.sender == current_user
+      @user_receiver = message.receiver
+    else
+      @user_receiver = message.sender
+    end
+    @messages = Message.where(receiver: [@user_receiver, current_user], sender: [@user_receiver, current_user])
+
 
     # @message = Message.find(params[:id])
     # @message.update(read: true)
@@ -19,7 +25,7 @@ class MessagesController < ApplicationController
     @message.sender = current_user
     @message.receiver_id = params["user_id"].to_i
     if @message.save
-      redirect_to @message.receiver
+      redirect_to user_message_path(user_id: current_user,id: @message.id)
   end
 
   end
