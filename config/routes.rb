@@ -4,10 +4,12 @@ Rails.application.routes.draw do
   get 'users/profile', to: 'users#profile'
 
 
+  resources :wishes, only: [:destroy]
+
   resources :users do
     resources :messages, only: [:index, :show, :create]
     resources :expertises, only: [:create]
-    resources :wishes, only: [:create]
+    resources :wishes, only: [ :create ]
     resources :saves, only: [ :create]
     resources :meetings
     resources :feedbacks, only: [ :index, :new, :create]

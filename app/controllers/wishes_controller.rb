@@ -16,7 +16,9 @@ class WishesController < ApplicationController
   end
 
   def destroy
-
+    @wish = Wish.find(params[:id])
+    @wish.destroy
+    redirect_to users_profile_path
   end
 
   private

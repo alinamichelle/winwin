@@ -1,11 +1,15 @@
 <h1>This is <%= @user.name%>'s profile</h1>
 <h3>Info</h3>
-  <%= @user.avatar_url %>
-  <%= @user.name %>
-  <%= @user.birthday %>
-  <%= @user.location %>
-  <%= @user.tagline %>
-  <%= @user.biography %>
+  <p><%= @user.avatar_url %></p>
+  <p><%= @user.name %></p>
+  <p>Birthday:</p>
+  <p><%= @user.birthday %></p>
+  <p>Location:</p>
+  <p><%= @user.location %></p>
+  <p>Tagline:</p>
+  <p><%= @user.tagline %></p>
+  <h5>Biography</h5>
+  <p><%= @user.biography %></p>
 
 <h3>Expertise</h3>
   <ul>
@@ -14,21 +18,29 @@
       <li><%= expertise.experience %></li>
     <% end %>
   </ul>
+  <%= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
+  <%= render "shared/modal_for_expertise" %>
 
 <h3>Wishlist</h3>
   <ul>
     <% @user.wishes.each do |wish| %>
       <li><%= wish.description %></li>
+      <%= link_to wish_path(wish), method: :delete, data: { confirm: "Are you sure?" } do %>
+        <i class="fa fa-trash destroy_wish"></i>
+      <% end %>
     <% end %>
   </ul>
+  <%= link_to "Wish List", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
+  <%= render "shared/modal_for_wishlist" %>
 
 
 
-<%= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
-<%= render "shared/modal_for_expertise" %>
 
-<%= link_to "Wish List", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
-<%= render "shared/modal_for_wishlist" %>
+<%#= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%#= render "shared/modal_for_expertise" %>
+
+<%#= link_to "Wish List", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%#= render "shared/modal_for_wishlist" %>
 
 
 
