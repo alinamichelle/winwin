@@ -26,22 +26,14 @@ def update
   end
 end
 
-  def profile
+  def profile #editable profile
     @user = current_user
     @wish = Wish.new
     @wish.user = @user
   end
 
   def show
-    @wish = Wish.new
-    @wish.user = @user
-    if params[:id] == "id"
-      @wish = Wish.new
-      @wish.user = @user
-      @user = current_user
-    else
-      @user = User.find(params[:id])
-    end
+    @user = User.find(params[:id])
   end
 
   private
