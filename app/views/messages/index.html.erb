@@ -4,7 +4,7 @@
   <p>
 
     <%= message.read? ? '✔✔' : '✔' %>
-    <%= message.sender.name %>
+    <%= message.sender == current_user ? message.receiver.name : message.sender.name %>
     <%= message.content %>
     <%= link_to 'see message', user_message_path(current_user, message) %>
   </p>
