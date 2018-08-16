@@ -1,7 +1,17 @@
 class MessagesController < ApplicationController
 
   def index
-    @messages = current_user.received_messages
+    # show all chats each chat has a sender and
+
+    #@messages = Message.where(sender: current_user) || Message.where(receiver: current_user)
+    @users = current_user.sent_messages.map{ |mess| mess.receiver.id } + current_user.received_messages.map{ |mess| mess.sender.id }
+    @users = @users.uniq
+    @messages = []
+    @users.each do |user_id|
+      puts user_id
+      #@messages << current_user.received_messages.where(sender_id: user_id).last ||current_user.sent_messages.where(receiver_id: user_id).last
+      @messages << Message.where("(sender_id = ? AND receiver_id = ?) OR (sender_id= ? AND receiver_id = ?)", current_user.id, user_id, user_id, current_user.id).last
+    end
   end
 
   def show #conversation
