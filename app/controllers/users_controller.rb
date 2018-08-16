@@ -34,9 +34,10 @@ end
   end
 
   def show
-    @user = User.find(params[:id])
+    @user_receiver = User.find(params[:id])
 
     @expertise = Expertise.new
+    @message = Message.new
     @expertise.user = @user
     @wish = Wish.new
     @wish.user = @user

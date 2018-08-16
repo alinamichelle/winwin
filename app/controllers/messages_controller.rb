@@ -10,14 +10,16 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.new(params[])
-    @message.receiver = Message.find(params[:id])
+    @message = Message.new
+    @message.content = params["message"]["content"]
     @message.sender = current_user
-      if @message.save
-       say that message is sent
-      else
-       say the opposite
-      end
+    @message.receiver_id = params["user_id"].to_i
+    if @message.save
+      redirect_to @message.receiver
+    end
+
+
+
   end
 
   def new
@@ -32,5 +34,11 @@ class MessagesController < ApplicationController
 
   def save
     @message = Message.save
+  end
+
+  private
+
+  def message_params
+    params.require(:message).permit(:content, :user_id)
   end
 end

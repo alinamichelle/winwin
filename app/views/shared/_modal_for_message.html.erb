@@ -7,7 +7,7 @@
 
 
   <!-- The Modal -->
-  <div class="modal" id="testModal">
+  <div class="modal" id="testMessage">
     <div class="modal-dialog">
       <div class="modal-content">
 
@@ -19,14 +19,17 @@
 
         <!-- Modal body -->
         <div class="modal-body">
-          <p>Ola</p>
+          <%= simple_form_for [@user_receiver, @message] do |ef| %>
+          <%= ef.input :content, as: :text %>
+
+
         </div>
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <%= ef.button :submit, "Send" %>
         </div>
-
+        <% end %>
       </div>
     </div>
   </div>
