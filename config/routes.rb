@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
   get 'wishes/new'
-  get 'users/profile', to: 'users#profile' do
-    resources :wishes, only: [ :create, :destroy ]
-  end
+  get 'users/profile', to: 'users#profile'
+
   resources :wishes, only: [:destroy]
   resources :users do
     resources :messages, only: [:index, :show, :new, :create]

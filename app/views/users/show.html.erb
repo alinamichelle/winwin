@@ -3,12 +3,16 @@ view messages
 view calendar (meetings) -->
 <h1>This is <%= @user.name%>'s profile</h1>
 <h3>Info</h3>
-  <%= @user.avatar_url %>
-  <%= @user.name %>
-  <%= @user.birthday %>
-  <%= @user.location %>
-  <%= @user.tagline %>
-  <%= @user.biography %>
+  <p><%= @user.avatar_url %></p>
+  <p><%= @user.name %></p>
+  <p>Birthday:</p>
+  <p><%= @user.birthday %></p>
+  <p>Location:</p>
+  <p><%= @user.location %></p>
+  <p>Tagline:</p>
+  <p><%= @user.tagline %></p>
+  <h5>Biography</h5>
+  <p><%= @user.biography %></p>
 
 <h3>Expertise</h3>
   <ul>
