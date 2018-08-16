@@ -17,9 +17,7 @@ class MessagesController < ApplicationController
     @message.receiver_id = params["user_id"].to_i
     if @message.save
       redirect_to @message.receiver
-    end
-
-
+  end
 
   end
 
