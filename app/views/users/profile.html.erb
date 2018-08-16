@@ -1,39 +1,60 @@
-<h1>This is <%= @user.name%>'s profile</h1>
-<h3>Info</h3>
-  <p><%= @user.avatar_url %></p>
-  <p><%= @user.name %></p>
-  <p>Birthday:</p>
-  <p><%= @user.birthday %></p>
-  <p>Location:</p>
-  <p><%= @user.location %></p>
-  <p>Tagline:</p>
-  <p><%= @user.tagline %></p>
-  <h5>Biography</h5>
-  <p><%= @user.biography %></p>
+<div class="wrapper">
 
-<h3>Expertise</h3>
-  <ul>
-    <% @user.expertises.each do |expertise| %>
-    <li><%= expertise.topic.name %></li>
-      <li><%= expertise.experience %></li>
-    <% end %>
-  </ul>
-  <%= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
-  <%= render "shared/modal_for_expertise" %>
+  <div class="container">
 
-<h3>Wishlist</h3>
-  <ul>
-    <% @user.wishes.each do |wish| %>
-      <li><%= wish.description %></li>
-      <%= link_to wish_path(wish), method: :delete, data: { confirm: "Are you sure?" } do %>
-        <i class="fa fa-trash destroy_wish"></i>
-      <% end %>
-    <% end %>
-  </ul>
-  <%= link_to "Wish List", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
-  <%= render "shared/modal_for_wishlist" %>
+    <h1><%= @user.name%>'s profile</h1>
+
+    <div class="">
+      <p><%= @user.avatar_url %></p>
+    </div>
+
+    <div class="">
+      <p><%= @user.name %></p>
+      <p><%= @user.birthday years old %></p>
+      <p><%= @user.location %></p>
+    </div>
+
+    <div class="">
+      <p>Tagline:</p>
+      <p><%= @user.tagline %></p>
+    </div>
+
+    <div class="">
+      <h3>About Me</h3>
+        <h5>Biography:</h5>
+        <p><%= @user.biography %></p>
+    </div>
 
 
+    <div class="">
+      <h3>Areas of Expertise</h3>
+        <ul>
+          <% @user.expertises.each do |expertise| %>
+          <li><%= expertise.topic.name %></li>
+            <li><%= expertise.experience %></li>
+          <% end %>
+        </ul>
+        <%= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
+        <%= render "shared/modal_for_expertise" %>
+    </div>
+
+    <div class="">
+      <h3>Wishlist</h3>
+        <ol>
+          <% @user.wishes.each do |wish| %>
+            <li><%= wish.description %></li>
+            <%= link_to wish_path(wish), method: :delete, data: { confirm: "Are you sure?" } do %>
+              <i class="fa fa-trash destroy_wish"></i>
+            <% end %>
+          <% end %>
+        </ol>
+        <%= link_to "Wish List", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
+        <%= render "shared/modal_for_wishlist" %>
+    </div>
+
+  </div>
+
+</div>
 
 
 <%#= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
