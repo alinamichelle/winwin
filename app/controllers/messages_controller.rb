@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
 
   def index
     @messages = current_user.received_messages
+    @messages = current_user.sent_messages
   end
 
   def show
