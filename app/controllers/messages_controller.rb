@@ -2,12 +2,15 @@ class MessagesController < ApplicationController
 
   def index
     @messages = current_user.received_messages
-    @messages = current_user.sent_messages
   end
 
-  def show
-    @message = Message.find(params[:id])
-    @message.update(read: true)
+  def show #conversation
+    @message_new = Message.new
+    @user_receiver = User.find(params["user_id"].to_i)
+    @messages = Message.where(receiver: @user_receiver, sender: current_user)
+
+    # @message = Message.find(params[:id])
+    # @message.update(read: true)
   end
 
   def create

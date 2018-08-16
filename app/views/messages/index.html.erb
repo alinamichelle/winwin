@@ -1,8 +1,8 @@
 <% @messages.each do |message| %>
   <p>
-    <%= message.read? ? 'LIDA' : 'NAO LIDA!' %>
+    <%#= message.read? ? 'LIDA' : 'NAO LIDA!' %>
     <%= message.sender.name %>
-    <%= message.content %>
+
     <%= link_to 'Ler', user_message_path(current_user, message) %>
   </p>
 <% end %>
