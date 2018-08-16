@@ -1,1 +1,13 @@
-<%= @message.content %>
+<%#= @message.content %>
+  <% @messages.each do |message| %>
+    <p><%= message.sender.name%></p>
+    <p><%= message.receiver.name %></p>
+    <p><%= message.content %></p>
+    <p><%= message.created_at %></p>
+  <% end %>
+  <div>
+        <%= simple_form_for [@user_receiver, @message_new] do |ef| %>
+          <%= ef.input :content, as: :text %>
+          <%= ef.button :submit, "Send" %>
+        <% end %>
+  </div>
