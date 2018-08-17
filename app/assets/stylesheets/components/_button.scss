@@ -1,16 +1,35 @@
 .btn-small {
-  color: white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-weight: lighter;
-  background-color: rgb(253, 120, 84);
-  transition: background 0.3s ease;
+ color: white;
+ padding: 10px 15px;
+ border-radius: 4px;
+ font-weight: lighter;
+ background-color: rgb(253, 120, 84);
+ transition: background 0.3s ease;
 }
 .btn-small:hover {
-  background-color: rgb(252, 80, 34);
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
+ background-color: rgb(252, 80, 34);
+ text-decoration: none;
+ color: white;
+ font-weight: bold;
+}
+
+.btn-small-blue {
+ color: white;
+ padding: 10px 15px;
+ border-radius: 4px;
+ font-weight: lighter;
+ background-color: #66D2EA;
+ transition: background 0.3s ease;
+}
+
+.btn-small-blue:hover {
+ color: white;
+ padding: 10px 15px;
+ border-radius: 4px;
+ text-decoration: none;
+ font-weight: lighter;
+ background-color: #07889B;
+ transition: background 0.3s ease;
 }
 
 .btn-small-blue {
