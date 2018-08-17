@@ -1,4 +1,4 @@
-<!-- view notifications(messages, calendar)
+ <!-- view notifications(messages, calendar)
 view messages
 view calendar (meetings) -->
 <h1>This is <%= @user.name%>'s profile</h1>
@@ -22,12 +22,7 @@ view calendar (meetings) -->
     <% end %>
   </ul>
 
-<h3>Wishlist</h3>
-  <ul>
-    <% @user.wishes.each do |wish| %>
-      <li><%= wish.description %></li>
-    <% end %>
-  </ul>
+
 
 
 
@@ -36,11 +31,11 @@ view calendar (meetings) -->
 <%= render "shared/modal_for_message" %>
 
 
-<%= link_to "Saves", "#testSave", "data-toggle" => "modal", class:"btn btn-primary" %>
-<%= render "shared/modal_for_save" %>
+<%#= link_to "Saves", "#testSave", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%#= render "shared/modal_for_save" %>
 
-<%= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
-<%= render "shared/modal_for_expertise" %>
+<%#= link_to "Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
+<%#= render "shared/modal_for_expertise" %>
 
 
 
