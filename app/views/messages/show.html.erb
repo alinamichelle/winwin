@@ -1,11 +1,10 @@
-<%#= @message.content %>
 
 <div class="container">
   <h3><strong><%=@user_receiver.name%></strong></h3>
   <% @messages.each do |message| %>
       <div class="message <%= message.sender == current_user ? ' text-right' : ''%>">
       <p><%= message.content %></p>
-      <img class="avatar-small-messages">
+      <!-- <img class="avatar-small-messages"> -->
     </div>
   <% end %>
 
