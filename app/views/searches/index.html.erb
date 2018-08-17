@@ -1,14 +1,12 @@
-<h1>Searches#index</h1>
-<p>Find me in app/views/searches/index.html.erb</p>
+<h1>They can tell you a story!</h1>
+<p></p>
 
 
 <% @results.each do |result| %>
-  <div>
-    <%= cl_image_tag(result.avatar_url, class:"avatar-small") %>
+  <div style="padding: 20px;">
+    <%= cl_image_tag(result.avatar_url, class:"avatar-search") %>
     <h2><%= result.name %></h2>
     <h3><%= result.tagline %></h3>
     <h4>location</h4>
   </div>
 <% end %>
-
-
