@@ -1,0 +1,12 @@
+<h1>Searches#index</h1>
+<p>Find me in app/views/searches/index.html.erb</p>
+
+
+<% @results.each do |result| %>
+  <div>
+    <img src="<%= result.avatar_url %>" alt="" class="avatar-small">
+    <h2><%= result.name %></h2>
+    <h3><%= result.tagline %></h3>
+    <h4>location</h4>
+  </div>
+<% end %>
