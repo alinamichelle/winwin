@@ -2,6 +2,17 @@
   position: relative;
 }
 
+.expertise-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+.wishlist-list {
+  padding-bottom: 20px;
+}
+
 .container-blue {
   height: 200px;
   background: linear-gradient(0deg, #78E0DA 0%, #66D2EA 80%);
@@ -21,7 +32,7 @@
 }
 
 .profile-avatar {
-  margin-left: 200px;
+  margin-left: 100px;
   margin-right: 30px;
 }
 
