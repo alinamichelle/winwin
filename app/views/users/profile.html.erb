@@ -17,18 +17,24 @@
         <button class="btn btn-primary btn-profile-interaction">REQUEST INTERACTION</button>
       </div> -->
     </div>
+    <div class="row row-tagline">
+      <div class="profile-tagline">
+        <h2><%= @user.tagline %></h2>
+      </div>
+    </div>
   </div>
 
   <div class="container container-grey">
     <div class="grey-left-column-content">
       <div class="grey-left-area-expertise">
+        <h2><strong>Areas of Expertise</strong></h2>
         <ul>
           <% @user.expertises.each do |expertise| %>
             <li><%= expertise.topic.name %></li>
             <li><%= expertise.experience %></li>
           <% end %>
         </ul>
-        <%= link_to "Edit Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn btn-primary" %>
+        <%= link_to "Edit Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn-small-blue" %>
         <%= render "shared/modal_for_expertise" %>
         <!-- <h1>#visualarts</h1>
         <h2>#blues</h2>
@@ -41,48 +47,35 @@
             <li><%= wish.description %></li>
           <% end %>
         </ul>
-        <%= link_to "Edit Wishlist", "#testWishlist", "data-toggle" => "modal", class:"btn btn-primary" %>
+        <%= link_to "Edit Wishlist", "#testWishlist", "data-toggle" => "modal", class:"btn-small-blue" %>
           <%= render "shared/modal_for_wishlist" %>
         <!-- <button class="btn btn-primary btn-whishlist">LEARN MORE</button> -->
       </div>
     </div>
 
     <div class="grey-main-content">
-      <div class="main-content-description">
-        <h1><%= @user.tagline %></h1>
-      </div>
-
       <div class="main-content-aboutme">
         <h2>About Me</h2>
         <div class="row row-aboutme">
 
-          <div class="col-xs-12">
-            <div class="aboutme-card">
-              <h3>Carrer</h3>
-              <p>text</p>
-            </div>
-          </div>
-
-          <div class="col-xs-12">
+          <div class="col-xs-6">
             <div class="aboutme-card">
               <h3>My story</h3>
               <p><%= @user.biography %></p>
             </div>
           </div>
 
-          <div class="col-xs-12">
-            <div class="aboutme-card">
-              <h3>favorite quotes</h3>
-              <p>blablabla</p>
-            </div>
-          </div>
+
         </div>
-        </div>
+
       </div>
+
     </div>
+
   </div>
 
 </div>
+
 
 
 
