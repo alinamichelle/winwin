@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'searches/index'
   get 'wishes/new'
   get 'users/profile', to: 'users#profile'
 
@@ -13,6 +14,8 @@ Rails.application.routes.draw do
     resources :saves, only: [ :create]
     resources :meetings
     resources :feedbacks, only: [ :index, :new, :create]
+    resources :searches
+    # Question: do we need this or not?
   end
 
   devise_for :users, controllers: { registrations: "registrations" }, :path => 'accounts'
