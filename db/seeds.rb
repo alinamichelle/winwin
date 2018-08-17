@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-Topic.destroy_all
 User.destroy_all
 
 puts "creating 10 topics"
@@ -62,7 +61,7 @@ User.create!([{
     role: 21,
     birthday: "1996-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534489888/1designstudent.jpg",
+    avatar_url: "1designstudent",
     tagline: Faker::Seinfeld.quote,
     biography: "Bacon fanatic. Explorer. Music scholar. Internetaholic. Organizer. Introvert. Writer. Twitter aficionado."
   },
@@ -74,7 +73,7 @@ User.create!([{
     role: 61,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534489889/1gypsylady.jpg",
+    avatar_url: "1gypsylady",
     tagline: "Faker Seinfeld quote",
     biography: "Lifelong introvert. Zombie maven. Passionate internet enthusiast."
   },
@@ -86,7 +85,7 @@ User.create!([{
     role: 71,
     birthday: "1946-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534493903/1Zlat_a_Luc_218.jpg",
+    avatar_url: "1Zlat_a_Luc_218",
     tagline: Faker::Seinfeld.quote,
     biography:  "I was born in Bay City, Michigan, on August 16, 1958, to parents Silvio 'Tony' Ciccone and Madonna Fortin. Tony, the son of Italian immigrants, was the first of his family to go to college, where he earned a degree in engineering."
   },
@@ -98,7 +97,7 @@ User.create!([{
     role: 69,
     birthday: "1949-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534489890/1redheadlady.jpg",
+    avatar_url: "1redheadlady",
     tagline: Faker::Seinfeld.quote,
     biography: "I was born in El Rosario Sinaloa, where I completed secretarial studies and participated in singing competitions. I then moved to Mexico City but would return often to Rosario, working as a secretary at Mexico's number-one radio station, XEW."
   },
@@ -110,7 +109,7 @@ User.create!([{
     role: 79,
     birthday: "1938-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534495703/1old-man.jpg",
+    avatar_url: "1old-man",
     tagline: Faker::Seinfeld.quote,
     biography: "Organizer. Thinker. Reader. Lifelong travel aficionado. Communicator. Proud tv enthusiast. Friendly music fan. Evil food lover."
   },
@@ -122,7 +121,7 @@ User.create!([{
     role: 61,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534495470/1aretha.jpg",
+    avatar_url: "1aretha",
     tagline: Faker::Seinfeld.quote,
     biography: "When my soul was in the lost and found, you came along to claim it. I didn't know just what was wrong with me, until your kiss helped me name it."
   },
@@ -134,7 +133,7 @@ User.create!([{
     role: 61,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534489888/1bowtie.jpg",
+    avatar_url: "1bowtie",
     tagline: Faker::Seinfeld.quote,
     biography: "Come fly with me, let's float down to Peru. In llama land, there's a one man band, and he'll toot his flute for you; come on."
   },
@@ -146,7 +145,7 @@ User.create!([{
     role: 61,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534489889/1whitelady_copie.jpg",
+    avatar_url: "1whitelady_copie",
     tagline: Faker::Seinfeld.quote,
     biography: "Well, I was born a coal miner's daughter. In a cabin on a hill in Butcher Holler. We were poor, but we had love That's the one thing that Daddy made sure of."
   },
@@ -170,7 +169,7 @@ User.create!([{
     role: 61,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534489897/1oldmanpark.jpg",
+    avatar_url: "1oldmanpark",
     tagline: Faker::Seinfeld.quote,
     biography: "I was born and raised in Eastern Oklahoma, where I grew up hunting on family land and fishing on the local lake. I started a tournament career fishing with various partners including my uncles and dad and together we won many team tournaments."
   },
@@ -182,7 +181,7 @@ User.create!([{
     role: 61,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534489890/1redheadlady.jpg",
+    avatar_url: "1redheadlady",
     tagline: Faker::Seinfeld.quote,
     biography: 'I grew up in a small village in the mountains where we had many traditional stories and women lived in trees.'
   }])
