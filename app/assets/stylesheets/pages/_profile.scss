@@ -4,29 +4,46 @@
 
 
 .container-blue {
-  background-color: rgba(120, 225, 219, 0.61);
   height: 200px;
+  background: linear-gradient(0deg, #78E0DA 0%, #66D2EA 100%);
+  // background: linear-gradient(0deg, #FD7905 0%, #78E1DB 100%);
 }
-
-
-
 
 .container-profile {
   height: 300px;
   position: absolute;
-  top: 200px;
+  top: 85px;
 }
 
 .row-profile {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.profile-avatar {}
+.profile-avatar {
+  padding-left: 100px;
+  padding-right: 30px;
+}
+
+.profile-info {
+  text-align: left;
+}
+
+.profile-info h1 {
+  color: white;
+}
+
+.profile-info h4 {
+  color: rgba(31, 32, 65, 0.78);
+  font-size: 24px;
+}
+
+.profile-info h5 {
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 18px;
+}
 
 
-.profile-info {}
 
 
 .profile-interaction {}
