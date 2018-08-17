@@ -1,1 +1,8 @@
 
+
+   <div class="form-inputs">
+    <%= simple_form_for :search, url: searches_index_path, method: :get do |f| %>
+      <%= f.input :query %>
+      <%= f.submit "search", class: "btn btn-primary" %>
+    <% end %>
+  </div>
