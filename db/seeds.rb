@@ -158,7 +158,7 @@ User.create!([{
     role: 61,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "https://res.cloudinary.com/dqv6rncza/image/upload/v1534489888/1darkolderman.jpg",
+    avatar_url: "1darkolderman",
     tagline: Faker::Seinfeld.quote,
     biography: "He was the older brother of actor Ricardo Montalbán. Although not as famous as his younger brother, he is notable for having starred as 'El Exigente' in a series of coffee advertisements for Savarin Coffee in the 1960s and 1970s, and for portraying two different characters named 'Vargas'."
   },
