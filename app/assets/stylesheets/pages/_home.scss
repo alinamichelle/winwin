@@ -25,6 +25,16 @@ header.masthead {
   border-style: none;
 }
 
+.avatar-medium {
+  border-radius: 50%;
+  width: 125px;
+  height: 132px;
+  // box-shadow: 0 0 10px rgba(120, 225, 219, 0.71);
+  outline: rgba(120, 225, 219, 0.71);
+  outline-offset: 0px, 4px;
+}
+
+
 header.masthead .masthead-content .masthead-heading {
   font-family: 'Montserrat', sans-serif;
   font-size: 80px;

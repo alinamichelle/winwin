@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
+Expertise.destroy_all
 Topic.destroy_all
 User.destroy_all
 
