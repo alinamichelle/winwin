@@ -10,7 +10,7 @@
     <% if user_signed_in? %>
       <!-- Links when logged in -->
       <%= link_to "Calendar", user_meeting_path(:id, :user_id) , class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Message", user_messages_path(:user_id), class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Messages", user_messages_path(:user_id), class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "My Profile", users_profile_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
 
