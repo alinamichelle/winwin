@@ -1,36 +1,61 @@
  <!-- view notifications(messages, calendar)
 view messages
 view calendar (meetings) -->
-<h1>This is <%= @user.name%>'s profile</h1>
-<h3>Info</h3>
+<div class="wrapper">
+  <div class="container">
+
+    <div class="container container-blue"></div>
+
+    <div class="container container-profile">
+      <div class="row row-profile">
+        <div class="profile-avatar"> <%#= @user.avatar_url %>
+          <img src="https://media1.popsugar-assets.com/files/thumbor/yUcr10IQbkiCEcbtVl6ewJ32FN0/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/03/24/648/n/1922398/cf6cd7a1a6c0a505_GettyImages-510450790.jpg" class="avatar-large">
+        </div>
+        <div class="profile-info">
+          <h1><%= @user.name%></h1>
+          <h4><%= @user.birthday %></h4>
+          <h5><%= @user.location %></h5>
+        </div>
+      </div>
+      <div class="row row-tagline">
+        <div class="profile-tagline">
+          <h2><%= @user.tagline %></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-grey">
+      <div class="row"
+        <div class="basic-info">
+        <h3>Biography</h3>
+          <p><%= @user.biography %></p>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="other-expertise">
+        <h3>Areas of Expertise</h3>
+          <ul>
+            <% @user.expertises.each do |expertise| %>
+            <li><%= expertise.topic.name %></li>
+              <li><%= expertise.experience %></li>
+            <% end %>
+          </ul>
+        </div>
+    </div>
 
 
-  <p><%= @user.avatar_url %></p>
-  <p><%= @user.name %></p>
-  <p>Birthday:</p>
-  <p><%= @user.birthday %></p>
-  <p>Location:</p>
-  <p><%= @user.location %></p>
-  <p>Tagline:</p>
-  <p><%= @user.tagline %></p>
-  <h5>Biography</h5>
-  <p><%= @user.biography %></p>
 
-<h3>Expertise</h3>
-  <ul>
-    <% @user.expertises.each do |expertise| %>
-    <li><%= expertise.topic.name %></li>
-      <li><%= expertise.experience %></li>
-    <% end %>
-  </ul>
+    <%= link_to "Messages", "#testMessage", "data-toggle" => "modal", class:"btn-small" %>
+    <%= render "shared/modal_for_message" %>
 
 
+    </div>
 
 
+</div>
 
 
-<%= link_to "Messages", "#testMessage", "data-toggle" => "modal", class:"btn btn-primary" %>
-<%= render "shared/modal_for_message" %>
 
 
 <%#= link_to "Saves", "#testSave", "data-toggle" => "modal", class:"btn btn-primary" %>
