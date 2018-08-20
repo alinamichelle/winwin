@@ -30,6 +30,9 @@ class SearchesController < ApplicationController
 
     elsif params[:search][:qlocation].present?
       @results = User.where(location: "#{params[:search][:qlocation]}")
+
+    else
+      @results = []
     end
 
   end

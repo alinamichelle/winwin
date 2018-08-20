@@ -6,22 +6,13 @@
         <div class="col-xs-12 col-md-4">
           <div class="card card-index">
             <%= link_to user_path(result) do %>
-              <div class="card-body" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), <%= cl_image_tag(result.avatar_url, class:"avatar-search") %>'>
+              <div class="card-body" style='background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path result.avatar_url, :gravity=>"face" %>)'>
                 <div class="card-description">
                   <p><%= result.location %></p>
                 </div>
               </div>
               <div class="card-footer">
                 <h2><%= result.name %></h2>
-                <h3><%= result.tagline %></h3
-
-<% @results.each do |result| %>
-  <div style="padding: 20px;">
-    <%= cl_image_tag(result.avatar_url, class:"avatar-search") %>
-    <h2><%= result.name %></h2>
-    <h3><%= result.tagline %></h3>
-    <h4><%= result.location %></h4>
-    
                 <ul class="list-inline">
                   <li><a href=""><i class="fa fa-heart"></i></a></li>
                   <li><a href=""><i class="fa fa-share"></i></a></li>
