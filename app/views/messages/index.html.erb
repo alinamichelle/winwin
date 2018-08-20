@@ -1,6 +1,9 @@
 
 <div class="container">
   <div id="inbox">
+    <div class="return-profile">
+          <%= link_to 'back to profile', users_profile_path(current_user) %>
+        </div>
     <div class="welcome">
       <h2>Welcome <%= @current_user.name %></h2>
       <h5>You have <%= @messages.count %> message in your inbox </h5>
