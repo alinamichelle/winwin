@@ -2,100 +2,116 @@
 
   <div class="container">
 
-  <div class="container container-blue"></div>
+    <div class="container container-blue"></div>
 
 
-    <div class="container container-profile">
-      <div class="row row-profile">
-        <div class="profile-avatar">
-        <%= cl_image_tag(@user.avatar_url, class:"avatar-large") %>
+      <div class="container container-profile">
+        <div class="row row-profile">
+          <div class="profile-avatar">
+          <%= cl_image_tag(@user.avatar_url, class:"avatar-large") %>
+          </div>
+          <div class="profile-info">
+            <h1><%= @user.name%></h1>
+            <h4><%= @user.role %> years old</h4>
+            <h5><%= @user.location %></h5>
+          </div>
+          <!-- <div class="profile-interaction">
+            <button class="btn btn-primary btn-profile-interaction">REQUEST INTERACTION</button>
+          </div> -->
         </div>
-        <div class="profile-info">
-          <h1><%= @user.name%></h1>
-          <h4><%= @user.role %> years old</h4>
-          <h5><%= @user.location %></h5>
+
+        <div class="row row-tagline">
+          <div class="profile-tagline">
+            <h2><%= @user.tagline %></h2>
+          </div>
         </div>
-        <!-- <div class="profile-interaction">
-          <button class="btn btn-primary btn-profile-interaction">REQUEST INTERACTION</button>
-        </div> -->
 
       </div>
-      <div class="row row-tagline">
-        <div class="profile-tagline">
-          <h2><%= @user.tagline %></h2>
-        </div>
-      </div>
-
-    </div>
 
 
-    <div class="container container-grey">
-      <div class="grey-left-column-content">
-        <div class="grey-left-area-expertise">
-          <div class="row">
-            <div class="col-sm-4">
+      <div class="container container-profile-body">
+          <div class="profile-content">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="left-expertise">
 
-              <h2><strong>Areas of Expertise</strong></h2>
-              <ul class="expertise-list">
-                <% @user.expertises.each do |expertise| %>
-                  <li><%= expertise.topic.name %></li>
-                  <li><%= expertise.experience %></li>
-                <% end %>
-              </ul>
-              <%= link_to "Edit Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn-small-blue" %>
-              <%= render "shared/modal_for_expertise" %>
-              <!-- <h1>#visualarts</h1>
-              <h2>#blues</h2>
-              <h3>#rollerskating</h3> -->
-            </div>
-
-          <div class="col-sm-8">
-
-            <div class="grey-main-content">
-              <div class="main-content-aboutme">
-                <h2><strong>About Me</strong></h2>
-                <div class="row row-aboutme">
-
-                  <div class="col-xs-6">
-                    <div class="aboutme-card">
-                      <h3>My story</h3>
-                      <p><%= @user.biography %></p>
-                    </div>
-                  </div>
+                  <h2><strong>Areas of Expertise</strong></h2>
+                  <ul class="expertise-list">
+                    <% @user.expertises.each do |expertise| %>
+                      <li><%= expertise.topic.name %></li>
+                      <li><%= expertise.experience %></li>
+                    <% end %>
+                  </ul>
+                  <%= link_to "Edit Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn-small-blue" %>
+                  <%= render "shared/modal_for_expertise" %>
+                  <!-- <h1>#visualarts</h1>
+                  <h2>#blues</h2>
+                  <h3>#rollerskating</h3> -->
                 </div>
               </div>
+
+            <div class="col-sm-8">
+              <div class="profile-main-content">
+                <div class="main-content-aboutme">
+                  <h2><strong>About Me</strong></h2>
+
+                  <div class="row row-aboutme">
+                    <div class="col-sm-12">
+                      <div class="aboutme-card">
+                        <h3>My Story</h3>
+                        <p><%= @user.biography %></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row row-aboutme">
+                    <div class="col-sm-12">
+                      <div class="aboutme-card">
+                        <h3>Funniest Story</h3>
+                        <p><%= @user.biography %></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row row-aboutme">
+                    <div class="col-sm-12">
+                      <div class="aboutme-card">
+                        <h3>Favourite Food</h3>
+                        <p><%= @user.biography %></p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
           </div>
+
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="left-wishlist">
+                <h2><strong>Wishlist</strong></h2>
+                <ol class="wishlist-list">
+                  <% @user.wishes.each do |wish| %>
+                    <li><%= wish.description %></li>
+                  <% end %>
+                </ol>
+                <%= link_to "Edit Wishlist", "#testWishlist", "data-toggle" => "modal", class:"btn-small-blue" %>
+                  <%= render "shared/modal_for_wishlist" %>
+                <!-- <button class="btn btn-primary btn-whishlist">LEARN MORE</button> -->
+            </div>
+          </div>
+          <div class="col-sm-8"></div>
         </div>
 
       </div>
 
 
-    <div class="row">
-      <div class="col-sm-4">
-
-        <div class="grey-left-area-wishlist">
-          <div class="row">
-          <h2><strong>Wishlist</strong></h2>
-          <ol class="wishlist-list">
-            <% @user.wishes.each do |wish| %>
-              <li><%= wish.description %></li>
-            <% end %>
-          </ol>
-          <%= link_to "Edit Wishlist", "#testWishlist", "data-toggle" => "modal", class:"btn-small-blue" %>
-            <%= render "shared/modal_for_wishlist" %>
-          <!-- <button class="btn btn-primary btn-whishlist">LEARN MORE</button> -->
-          </div>
-        </div>
-
-      </div>
     </div>
 
   </div>
-</div>
-
-</div>
-
-</div>
 
 </div>
 
