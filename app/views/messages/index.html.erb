@@ -6,18 +6,19 @@
         </div>
     <div class="welcome">
       <h2>Welcome <%= @current_user.name %></h2>
-      <h5>You have <%= @messages.count %> message in your inbox </h5>
+      <h5>You have <%= @messages.count %> messages in your inbox </h5>
     </div>
 
     <!-- Message title rows -->
-    <div class="row borders heading">
-      <div class="col-xs-3">Sender</div>
-      <div class="col-xs-7">Message</div>
-      <div class="col-xs-2"></div>
-    </div>
+
 
     <!-- List of messages -->
     <div class="message-list">
+      <div class="row borders heading">
+        <div class="col-xs-3">Sender</div>
+        <div class="col-xs-7">Message</div>
+        <div class="col-xs-2"></div>
+      </div>
       <div class="row ">
         <% @messages.each do |message| %>
         <ul class="spacing_messages">
