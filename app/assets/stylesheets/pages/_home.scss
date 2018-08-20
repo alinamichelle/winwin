@@ -6,7 +6,6 @@ header.masthead {
   padding-right: 80rem;
   background-image: image-url("/assets/1.jpg");
   -webkit-text-fill-color: #ef5f33;
-
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -51,5 +50,14 @@ header.masthead .masthead-content .masthead-subheading {
   font-size: 30px;
   color: white;
   text-shadow: 2px 2px 2px #2f3030;
+}
+
+.video
+{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 

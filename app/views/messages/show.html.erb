@@ -3,11 +3,16 @@
   <div class="row">
     <div class="col-xs-6 col-xs-offset-3">
       <div id="chatroom">
+        <div class="return">
+          <%= link_to 'back to inbox', user_messages_path(current_user) %>
+        </div>
+
 
         <div class = "chat-title">
           <%#= @user.avatar_url %>
-          <p><%=@user_receiver.name%></p>
+          <p>Chatting with <%=@user_receiver.name%> </p>
         </div>
+
 
         <div class="message-body">
           <!-- <div class="row">
@@ -19,19 +24,19 @@
                 <p><%= message.content %></p>
                 <!-- <img class="avatar-small-messages"> -->
               </div>
-              <% end %>
-
-
+             <% end %>
             <!-- </div>
           </div> -->
         </div>
 
+        <div class="chat_form">
         <%= simple_form_for [@user_receiver, @message_new] do |ef| %>
         <%= ef.input :content, as: :text %>
           <div class="text-right">
           <%= ef.button :submit, "Send", class: "btn-small" %>
           </div>
         <% end %>
+      </div>
 
       </div>
     </div>

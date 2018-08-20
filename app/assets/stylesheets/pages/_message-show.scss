@@ -6,22 +6,38 @@
 }
 
 .message-body {
-  padding-top: 30px;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(31,32,65, 0.1);
+  border-radius: 2px;
   // background-color: gray;
 }
 
 .chat-body {
   padding-top: 50px;
+  margin-bottom: 20px;
 }
 
 .chat-title {
-  padding: 15px 16px 10px 15px;
-  margin: 0;
-  height: 60px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  height: 40px;
   width: 100%;
-  background-color: #eee;
+  // background-color: #eee;
+  border-bottom: 1px solid rgba(31,32,65, 0.05);
+  // border-top: 1px solid rgba(31,32,65, 0.1);
   border-radius: 2px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
 }
 
+.chat_form {
+  margin-top: 30px;
+}
 
-
+.return {
+  text-align: left;
+  padding: 10px;
+  font-weight: lighter;
+  font-size: 14px;
+}
