@@ -1,0 +1,29 @@
+#chatroom {
+  padding: 30px;
+  border: 1px solid #1F2041 10%;
+  background: white;
+  border-radius: 2px;
+}
+
+.message-body {
+  padding-top: 30px;
+  // background-color: gray;
+}
+
+.chat-body {
+  padding-top: 50px;
+}
+
+.chat-title {
+  padding: 15px 16px 10px 15px;
+  margin: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+.sender {
+  background-color: red;
+}
+
