@@ -1,13 +1,16 @@
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
-  padding-bottom: 7rem;
-  // background-image: src="app/assets/images/04.png";
+  padding-top: calc(20rem + 72px);
+  padding-bottom: 10rem;
+  padding-right: 80rem;
+  background-image: image-url("/assets/1.jpg");
+  -webkit-text-fill-color: #ef5f33;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  height: 600px;
 }
 
 .btn-xl {
