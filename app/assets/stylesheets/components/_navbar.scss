@@ -78,13 +78,17 @@
 }
 
 .btn-nav {
-  padding: 4px;
+  padding: 8.5px;
   background-color: #FF6B00;
-  font-size: 15px;
-  border-radius: 2px;
+  font-size: 13px;
+  border-radius: 4px;
   color: white;
+  font-weight: normal;
+  letter-spacing: 0.5px;
 }
-.btn-nav hover {
-  background-color: f28e46;
+.btn-nav:hover {
+  background-color: #f28e46;
   color: white;
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
