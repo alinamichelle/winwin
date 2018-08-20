@@ -6,7 +6,9 @@
 }
 
 .message-body {
-  padding-top: 30px;
+  padding-top: 20px;
+  border: 1px solid rgba(31,32,65, 0.1);
+  border-radius: 2px;
   // background-color: gray;
 }
 
@@ -17,10 +19,13 @@
 .chat-title {
   padding: 15px 16px 10px 15px;
   margin: 0;
-  height: 60px;
+  height: 40px;
   width: 100%;
-  background-color: #eee;
+  // background-color: #eee;
+  border: 1px solid rgba(31,32,65, 0.1);
   border-radius: 2px;
+  font-weight: bold;
+  text-align: center;
 }
 
 
