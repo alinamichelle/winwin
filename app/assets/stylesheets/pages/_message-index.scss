@@ -1,0 +1,40 @@
+
+#inbox {
+  margin: 2em 0;
+  background-color: white;
+  padding: 30px;
+}
+
+.borders {
+  border-bottom: 1px solid #ccc;
+  padding: 0.4em 0;
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.message-body {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.welcome {
+  padding-bottom: 70px;
+}
+
+.link {
+  text-align: right;
+}
+
+a {
+  color: orange;
+}
+
+.return {
+  text-align: left;
+  padding: 10px;
+  font-weight: lighter;
+  font-size: 14px;
+}

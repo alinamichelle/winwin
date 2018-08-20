@@ -1,17 +1,41 @@
 
-<div class="container">
-  <h3><strong><%=@user_receiver.name%></strong></h3>
-  <% @messages.each do |message| %>
-      <div class="message <%= message.sender == current_user ? ' text-right' : ''%>">
-      <p><%= message.content %></p>
-      <!-- <img class="avatar-small-messages"> -->
-    </div>
-  <% end %>
+<div class="container chat-body">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <div id="chatroom">
+        <div class="return">
+          <%= link_to 'back to inbox', user_messages_path(current_user) %>
+        </div>
 
-  <%= simple_form_for [@user_receiver, @message_new] do |ef| %>
-    <%= ef.input :content, as: :text %>
-    <div class="text-right">
-      <%= ef.button :submit, "Send", class: "btn-small" %>
+        <div class = "chat-title">
+          <%#= @user.avatar_url %>
+          <p>Chatting with <%=@user_receiver.name%> </p>
+        </div>
+
+
+        <div class="message-body">
+          <!-- <div class="row">
+            <div class="col-xs-1"> -->
+              <% @messages.each do |message| %>
+              <div class="message
+                <%= message.sender == current_user ? 'text-right'  : ''%>
+                <%= message.sender == current_user ? 'text-primary'  : ''%>">
+                <p><%= message.content %></p>
+                <!-- <img class="avatar-small-messages"> -->
+              </div>
+             <% end %>
+            <!-- </div>
+          </div> -->
+        </div>
+
+        <%= simple_form_for [@user_receiver, @message_new] do |ef| %>
+        <%= ef.input :content, as: :text %>
+          <div class="text-right">
+          <%= ef.button :submit, "Send", class: "btn-small" %>
+          </div>
+        <% end %>
+
+      </div>
     </div>
-  <% end %>
+  </div>
 </div>

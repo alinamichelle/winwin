@@ -12,6 +12,12 @@
   // -webkit-animation-iteration-count: infinite;
 }
 
+.card-landing{
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+}
+
 @keyframes bounce {
   0%, 100%, 20%, 50%, 80% {
     -webkit-transform: translateY(0);

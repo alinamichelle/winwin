@@ -1,14 +1,43 @@
 
-<% @messages.each do |message| %>
- <div class="container">
-    <div class="row">
-  <p>
-
-    <%= message.read? ? '✔✔' : '✔' %>
-    <%= message.sender == current_user ? message.receiver.name : message.sender.name %>
-    <%= message.content %>
-    <%= link_to 'see message', user_message_path(current_user, message) %>
-  </p>
-<% end %>
+<div class="container">
+  <div id="inbox">
+    <div class="welcome">
+      <h2>Welcome <%= @current_user.name %></h2>
+      <h5>You have <%= @messages.count %> message in your inbox </h5>
     </div>
- </div>
+
+    <!-- Message title rows -->
+    <div class="row borders heading">
+      <div class="col-xs-3">Sender</div>
+      <div class="col-xs-7">Message</div>
+      <div class="col-xs-2"></div>
+    </div>
+
+    <!-- List of messages -->
+    <div class="message-list">
+      <div class="row borders">
+        <% @messages.each do |message| %>
+
+        <div class="col-xs-3">
+          <%# message.read? ? '✔✔' : '✔' %>
+          <%= message.sender == current_user ? message.receiver.name : message.sender.name %>
+        </div>
+
+        <div class="col-xs-7">
+          <%= message.content %>...
+        </div>
+
+        <div class="link col-xs-2">
+          <%= link_to 'view', user_message_path(current_user, message) %>
+        </div>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

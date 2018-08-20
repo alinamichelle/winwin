@@ -2,17 +2,6 @@
   position: relative;
 }
 
-.expertise-list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  padding-bottom: 20px;
-}
-
-.wishlist-list {
-  padding-bottom: 20px;
-}
-
 .container-blue {
   height: 200px;
   background: linear-gradient(0deg, #78E0DA 0%, #66D2EA 80%);
@@ -66,16 +55,23 @@
   font-weight: normal;
 }
 
-.container-grey {
+.container-profile-body {
   // background-color: rgb(200,200,200);
   display: flex;
   margin-top: 250px;
 }
 
-.grey-left-column-content {
-}
+// .profile-content {
+//   margin-bottom: 40px;
+//   text-align: center;
+//   border-radius: 1px;
+//   margin-bottom: 30px;
+//   padding-bottom: 20px;
+//   padding-left: 30px;
+//   padding-right: 30px;
+// }
 
-.grey-left-area-expertise {
+.left-expertise {
   margin-bottom: 40px;
   text-align: center;
   border-radius: 4px;
@@ -86,12 +82,12 @@
   padding-right: 30px;
 }
 
-.grey-left-area-expertise h2 {
+.left-expertise h2 {
   font-size: 20px;
   color: #1F2041;
 }
 
-.grey-left-area-wishlist {
+.left-wishlist {
   margin-bottom: 40px;
   text-align: center;
   border-radius: 4px;
@@ -102,17 +98,30 @@
   padding-right: 30px;
 }
 
-.grey-left-area-wishlist h2 {
+.left-wishlist h2 {
   text-align: center;
   font-size: 20px;
   color: #1F2041;
 }
 
+.expertise-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+.wishlist-list {
+  padding-bottom: 20px;
+}
 
 .grey-main-content {
   max-width: 75%;
   border-radius: 4px;
   box-shadow: 0 0 3px rgba(0,0,0,0.2);
+.profile-main-content {
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   margin-bottom: 30px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -120,12 +129,10 @@
 
 }
 
-.main-content-aboutme {
-}
-
-.main-content-aboutme h2 {
+.profile-main-content h2 {
   font-size: 20px;
   color: #1F2041;
+  text-align: center;
 }
 
 .row-aboutme {}
