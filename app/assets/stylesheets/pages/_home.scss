@@ -1,7 +1,7 @@
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(20rem + 72px);
+  padding-top: calc(1rem + 10px);
   padding-bottom: 10rem;
   padding-right: 80rem;
   background-image: image-url("/assets/1.jpg");
@@ -50,6 +50,6 @@ header.masthead .masthead-content .masthead-subheading {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   color: white;
-  font-weight: lighter;
+  text-shadow: 2px 2px 2px #2f3030;
 }
 
