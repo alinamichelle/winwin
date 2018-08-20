@@ -1,7 +1,18 @@
-.card {
+.heading-index {
+  margin-top: 40px;
+}
+
+.card-index {
+  height: 175px;
   border-radius: 1px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  margin-bottom: 30px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 100px;
+
+  color: white;
+  position: relative;
+
    -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -10,12 +21,6 @@
   animation-timing-function: ease-in-out;
   // animation-iteration-count: infinite;
   // -webkit-animation-iteration-count: infinite;
-}
-
-.card-landing{
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  margin-bottom: 30px;
 }
 
 @keyframes bounce {
@@ -40,17 +45,22 @@
   cursor: pointer;
   animation-name: bounce;
   -moz-animation-name: bounce;
+  box-shadow: 0 0 10px #66B9BF;
+}
+
+.card-index:hover {
+  box-shadow: 0 0 10px #66B9BF;
 }
 
 .card-body {
-  height: 180px;
+  height: 200px;
   background-size: cover;
   color: white;
   position: relative;
   text-shadow: 1px 1px 0 #000;
 }
 
-.card-category {
+.card-location {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -58,32 +68,13 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: lighter;
-  max-width: 75%;
   text-align: left;
 }
 
 .card-description {
   position: absolute;
-  bottom: 0px;
+  bottom: 10px;
   left: 10px;
-}
-
-.card-description p {
-  font-size: 15px;
-  font-weight: lighter;
-  text-transform: uppercase;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-
-.card-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 2;
-  background: black;
-  opacity: 0;
 }
 
 .card-footer {
@@ -93,6 +84,7 @@
   padding: 10px;
   background-color: white;
   color: $gray-dark;
+  margin-bottom: 100px;
 }
 
 .card-footer p {
@@ -118,9 +110,10 @@
 
 .fa {
   display: inline-block;
-  color: #999999;
+  color: #66B9BF;
 }
 
 .fa:hover {
-  color: rgb(45, 45, 45);
+  // color: rgb(45, 45, 45);
+  color: #FF6B00;
 }
