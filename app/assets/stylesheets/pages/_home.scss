@@ -1,12 +1,9 @@
-.masthead-content{
-  background: video_tag;
-}
-
 header.masthead {
   position: relative;
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
+  background-image: src="app/assets/images/04.png";
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -51,14 +48,4 @@ header.masthead .masthead-content .masthead-subheading {
   color: white;
   font-weight: lighter;
 }
-
-.video
-{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
 
