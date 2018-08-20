@@ -10,10 +10,11 @@
   outline-offset: 0px, 4px;
 }
 .avatar-large {
+  background-image: cover;
   border-radius: 50%;
+  height:225px;
   width: 225px;
-  height: 232px;
-  box-shadow: 0 0 10px rgba(120, 225, 219, 0.71);
+  box-shadow: 0 0 10px rgba(150, 150, 150, 0.4);
   outline: rgba(120, 225, 219, 0.71);
   outline-offset: 0px, 4px;
 }

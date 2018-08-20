@@ -5,7 +5,12 @@
 .container-blue {
   height: 200px;
   background: linear-gradient(0deg, #78E0DA 0%, #66D2EA 80%);
+  padding: 110px 40px 0 0;
   // background: linear-gradient(0deg, #FD7905 0%, #78E1DB 100%);
+}
+
+.message-button {
+  text-align: right;
 }
 
 .container-profile {
@@ -23,6 +28,11 @@
 .profile-avatar {
   margin-left: 100px;
   margin-right: 30px;
+}
+
+.btn-profile-interaction {
+  margin-left: 275px;
+  margin-bottom: 70px;
 }
 
 .profile-info {
@@ -74,8 +84,8 @@
 .left-expertise {
   margin-bottom: 40px;
   text-align: center;
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.5);
   margin-bottom: 30px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -90,8 +100,8 @@
 .left-wishlist {
   margin-bottom: 40px;
   text-align: center;
-  border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.5);
   margin-bottom: 30px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -112,7 +122,16 @@
 }
 
 .wishlist-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
   padding-bottom: 20px;
+}
+
+.grey-main-content {
+  max-width: 75%;
+  border-radius: 4px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 
 .profile-main-content {
@@ -122,10 +141,9 @@
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
-
 }
 
-.main-content-aboutme h2 {
+.profile-main-content h2 {
   font-size: 20px;
   color: #1F2041;
   text-align: center;
