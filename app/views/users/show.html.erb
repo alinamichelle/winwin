@@ -9,7 +9,7 @@ view calendar (meetings) -->
     <div class="container container-profile">
       <div class="row row-profile">
         <div class="profile-avatar"> <%#= @user.avatar_url %>
-          <img src="https://media1.popsugar-assets.com/files/thumbor/yUcr10IQbkiCEcbtVl6ewJ32FN0/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/03/24/648/n/1922398/cf6cd7a1a6c0a505_GettyImages-510450790.jpg" class="avatar-large">
+          <%= cl_image_tag(@user.avatar_url, class:"avatar-large") %>
         </div>
         <div class="profile-info">
           <h1><%= @user.name%></h1>

@@ -1,8 +1,9 @@
 
 
-   <div class="form-inputs">
+   <div class="form-inputs form-inline">
     <%= simple_form_for :search, url: searches_index_path, method: :get do |f| %>
       <%= f.input :query %>
+      <%= f.input :qlocation %>
       <%= f.submit "search", class: "btn btn-primary" %>
     <% end %>
   </div>
