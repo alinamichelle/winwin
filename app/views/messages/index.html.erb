@@ -18,22 +18,24 @@
 
     <!-- List of messages -->
     <div class="message-list">
-      <div class="row borders">
+      <div class="row ">
         <% @messages.each do |message| %>
+        <ul class="spacing_messages">
+          <div class="col-xs-3 ">
+            <%# message.read? ? '✔✔' : '✔' %>
+          <li>
+            <%= message.sender == current_user ? message.receiver.name : message.sender.name %>
+          </div>
 
-        <div class="col-xs-3">
-          <%# message.read? ? '✔✔' : '✔' %>
-          <%= message.sender == current_user ? message.receiver.name : message.sender.name %>
-        </div>
+          <div class="col-xs-7">
+            <%= message.content %>...
+          </div>
 
-        <div class="col-xs-7">
-          <%= message.content %>...
-        </div>
-
-        <div class="link col-xs-2">
-          <%= link_to 'view', user_message_path(current_user, message) %>
-        </div>
-
+          <div class="link col-xs-2">
+            <%= link_to 'view', user_message_path(current_user, message) %>
+          </div>
+        </li>
+        </ul>
         <% end %>
       </div>
     </div>
