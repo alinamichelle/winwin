@@ -1,23 +1,25 @@
 <div class="wrapper">
 
   <div class="container">
-    <div class="container container-blue">
-      <div class="message-button">
-        <%= link_to "Message", "#testMessage", "data-toggle" => "modal", class:"btn btn-small" %>
-        <%= render "shared/modal_for_message" %>
-      </div>
-    </div>
+
+    <div class="container container-blue"></div>
+
 
       <div class="container container-profile">
         <div class="row row-profile">
           <div class="profile-avatar">
           <%= cl_image_tag(@user.avatar_url, class:"avatar-large") %>
           </div>
-
           <div class="profile-info">
             <h1><%= @user.name%></h1>
-            <h4><%= @user.role %> years of wisdom</h4>
+            <h4><%= @user.role %> years old</h4>
             <h5><%= @user.location %></h5>
+          </div>
+          <div class="edit-profile">
+            <button class="btn-small-blue btn-profile-interaction">
+              <%= link_to "message", "#testMessage", "data-toggle" => "modal", class:"btn btn-small" %>
+
+            </button>
           </div>
         </div>
 
@@ -43,6 +45,7 @@
                     <li><%= expertise.experience %></li>
                   <% end %>
                 </ul>
+                <%= link_to "Edit Expertise", "#testExpertise", "data-toggle" => "modal", class:"btn-small-blue" %>
                 <%= render "shared/modal_for_expertise" %>
                 <!-- <h1>#visualarts</h1>
                 <h2>#blues</h2>
@@ -56,6 +59,7 @@
                       <li><%= wish.description %></li>
                     <% end %>
                   </ol>
+                  <%= link_to "Edit Wishlist", "#testWishlist", "data-toggle" => "modal", class:"btn-small-blue" %>
                     <%= render "shared/modal_for_wishlist" %>
                   <!-- <button class="btn btn-primary btn-whishlist">LEARN MORE</button> -->
               </div>
@@ -104,8 +108,7 @@
 </div>
 
 
-
-
+<%#= link_to "Message", "#testMessage", "data-toggle" => "modal", class:"btn btn-small" %>
 <%#= link_to "Saves", "#testSave", "data-toggle" => "modal", class:"btn btn-primary" %>
 <%#= render "shared/modal_for_save" %>
 
