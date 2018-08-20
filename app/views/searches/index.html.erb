@@ -15,13 +15,6 @@
                 <h2><%= result.name %></h2>
                 <h3><%= result.tagline %></h3
 
-<% @results.each do |result| %>
-  <div style="padding: 20px;">
-    <%= cl_image_tag(result.avatar_url, class:"avatar-search") %>
-    <h2><%= result.name %></h2>
-    <h3><%= result.tagline %></h3>
-    <h4><%= result.location %></h4>
-    
                 <ul class="list-inline">
                   <li><a href=""><i class="fa fa-heart"></i></a></li>
                   <li><a href=""><i class="fa fa-share"></i></a></li>

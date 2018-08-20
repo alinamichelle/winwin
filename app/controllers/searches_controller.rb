@@ -14,8 +14,8 @@ class SearchesController < ApplicationController
            @results = []
         else
           @results = User.where("id in (#{user_ids.join(",")})")
-        end
       end
+    end
 
     elsif params[:search][:query].present?
       topic_ids = Topic.where("name ILIKE ?", "%#{params[:search][:query]}").pluck :id
@@ -33,11 +33,5 @@ class SearchesController < ApplicationController
     end
 
   end
-
-  # private
-
-  # def search_params
-  #   params.require(:search).permit(:name)
-  # end
 end
 
