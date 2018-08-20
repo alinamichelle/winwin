@@ -2,8 +2,8 @@
 
    <div class="form-inputs form-inline ">
     <%= simple_form_for :search, url: searches_index_path, method: :get do |f| %>
-      <%= f.input_field :query, :placeholder => 'add a subject' %>
-      <%= f.input_field :qlocation, :placeholder => 'choose a location'%>
-      <%= f.submit "search", class: "btn-nav" %>
+      <%= f.input_field :query, :placeholder => 'Add Topic' %>
+      <%= f.input_field :qlocation, :placeholder => 'Choose Location'%>
+      <%= f.submit "Search", class: "btn-nav" %>
     <% end %>
   </div>
