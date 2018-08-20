@@ -13,6 +13,8 @@
   margin-top: 200px;
 }
 
+
+
 #tag {
   text-align: right;
   margin-right: 100px;
@@ -24,4 +26,13 @@
   font-size: 36px;
   color: rgba(0, 0, 0, 0.48);
   font-weight: normal;
+}
+
+.message-button{
+  text-align: right;
+  z-index: -1;
+}
+
+.wrapper2 {
+  position: absolute;
 }
