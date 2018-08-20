@@ -3,11 +3,12 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background-image: src="app/assets/images/04.png";
+  background-image: image-url("/assets/04.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
+  height: 600px;
 }
 
 .btn-xl {
