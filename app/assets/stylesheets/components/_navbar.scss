@@ -83,7 +83,7 @@
   color: white;
   padding: 8px 12px;
   text-decoration: none;
-  margin: 4px 4px;
+  margin: 6px 4px 6px 4px;
   cursor: pointer;
   border-radius: 4px;
   font-weight: lighter;
@@ -93,5 +93,10 @@
 .btn-nav:hover {
   background-color: white;
   color: rgb(253, 120, 84);
-  border: 1px solid rgba(31,32,65, 0.1);
+  border: 1px solid rgba(253, 120, 84, 0.15);
+}
+
+.placeholder-text {
+  font-style: italic;
+  font-weight: lighter;
 }
