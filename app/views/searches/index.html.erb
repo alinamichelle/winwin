@@ -1,6 +1,25 @@
-<div class="text-center"><h1 class="heading-index">Find a Buddy</h1></div>
+<div class="results-title text-center"><h1 class="heading-index">Find a Storyteller</h1></div>
+<div class="container">
+  <div class="results-container search-form col-lg-3 col-sm-12 left">
+      <div class="row">
+        <%= simple_form_for :search, url: searches_index_path, method: :get do |f| %>
 
-  <div class="container">
+        <div class="topic">
+          <%= f.input_field :query, :placeholder => 'Add Topic' %>
+        </div>
+
+        <div class="location">
+          <%= f.input_field :qlocation, :placeholder => 'Choose Location'%>
+        </div>
+
+        <div class="search-btn">
+          <%= f.submit "Search", class: "btn-nav" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="results-container col-lg-9 col-sm-12 right">
     <div class="row">
       <% @results.each do |result| %>
         <div class="col-xs-12 col-md-3">
@@ -30,5 +49,6 @@
     </div>
   </div>
 </div>
+
 
 
