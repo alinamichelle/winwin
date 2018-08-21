@@ -2,11 +2,11 @@
 <div class="container">
   <div id="inbox">
     <div class="return-profile">
-          <%= link_to 'back to profile', users_profile_path(current_user) %>
+          <%= link_to 'Back to Profile', users_profile_path(current_user), class: 'return-profile' %>
         </div>
     <div class="welcome">
       <h2>Welcome <%= @current_user.name %></h2>
-      <h5>You have <%= @messages.count %> messages in your inbox </h5>
+      <h5>You have <%= pluralize(@messages.count, 'message') %> in your Inbox </h5>
     </div>
 
     <!-- Message title rows -->
@@ -15,8 +15,9 @@
     <!-- List of messages -->
     <div class="message-list">
       <div class="row borders heading">
-        <div class="col-xs-3">Sender</div>
-        <div class="col-xs-7">Message</div>
+        <div class="col-xs-3 text-heading"><i class="fas fa-user icons-messages"></i>Sender</div>
+        <div class="col-xs-2">✔ Status</div>
+        <div class="col-xs-5 text-heading"><i class="fas fa-envelope icons-messages"></i></i>Message</div>
         <div class="col-xs-2"></div>
       </div>
 
@@ -24,17 +25,24 @@
         <% @messages.each do |message| %>
         <ul class="spacing_messages">
           <div class="col-xs-3 ">
-            <%# message.read? ? '✔✔' : '✔' %>
           <li>
             <%= message.sender == current_user ? message.receiver.name : message.sender.name %>
           </div>
 
-          <div class="col-xs-7">
-            <%= message.content %>...
+          <div class="col-xs-2">
+            <% if message.read? %>
+              <div style="color: #66B9BF">✔✔</div>
+            <% else %>
+              <div style="color: #C7C7CF">✔✔</div>
+            <% end %>
           </div>
 
-          <div class="link col-xs-2">
-            <%= link_to 'view', user_message_path(current_user, message) %>
+          <div class="col-xs-5">
+            <%= message.content %> ...
+          </div>
+
+          <div class="col-xs-2">
+            <%= link_to 'View Message', user_message_path(current_user, message), class: 'view' %>
           </div>
         </li>
         </ul>

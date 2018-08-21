@@ -58,7 +58,7 @@ User.create!([{
 
     email: "1admin@admin.com",
     password: "admin",
-    name: "Faker::Name.name",
+    name: Faker::Name.name,
     role: 21,
     birthday: "1996-11-23",
     location: "Lisbon",
@@ -70,7 +70,7 @@ User.create!([{
   {
     email: "2admin@admin.com",
     password: "admin",
-    name: "Faker::Name.name",
+    name: Faker::Name.name,
     role: 61,
     birthday: "1956-11-23",
     location: "Lisbon",
