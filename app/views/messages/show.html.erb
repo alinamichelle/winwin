@@ -9,7 +9,7 @@
 
 
         <div class = "chat-title">
-          <%#= @user.avatar_url %>
+          <%= cl_image_tag(@user.receiver.avatar_url, class: 'avatar-small') %>
           <p>Chatting with <%=@user_receiver.name%> </p>
         </div>
 
@@ -33,7 +33,7 @@
         <%= simple_form_for [@user_receiver, @message_new] do |ef| %>
         <%= ef.input :content, as: :text %>
           <div class="text-right">
-          <%= ef.button :submit, "Send", class: "btn-small" %>
+          <%= ef.button :submit, "Send", class: "btn-small messages-btn" %>
           </div>
         <% end %>
       </div>

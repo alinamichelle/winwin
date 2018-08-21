@@ -13,11 +13,13 @@
 .spacing_messages {
   border-bottom: 1px solid #ccc;
   list-style-type: none;
-  padding: 30px 25px 50px 10px;
+  padding: 28px 25px 25px 0px;
   text-align: left;
 }
+
 .spacing_messages li {
   text-align: left;
+  overflow: auto;
 }
 
 .heading {
@@ -68,6 +70,10 @@
   font-weight: bold;
   color: #FF6B00;
   text-decoration: none;
+}
+
+.sender {
+  margin-right: 10px;
 }
 
 
