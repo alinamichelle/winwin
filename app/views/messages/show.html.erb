@@ -8,9 +8,9 @@
         </div>
 
 
-        <div class = "chat-title">
+        <div class="chat-title">
           <%= cl_image_tag(@user_receiver.avatar_url, class: 'avatar-small') %>
-          <p>Chatting with <%= @user_receiver.name %> </p>
+          <p class="message-title">Chatting with <%= @user_receiver.name %> </p>
         </div>
 
 
@@ -19,7 +19,7 @@
             <div class="col-xs-1"> -->
               <% @messages.each do |message| %>
               <div class="message
-                <%= message.sender == current_user ? 'text-right'  : 'text-left' %>">
+                <%= message.sender == current_user ? 'text-right own-text'  : 'text-left other-text' %>">
                 <p><%= message.content %></p>
                 <!-- <img class="avatar-small-messages"> -->
               </div>
