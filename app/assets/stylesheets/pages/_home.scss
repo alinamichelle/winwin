@@ -1,16 +1,20 @@
+body {
+  background-color: #f2f2f3;
+}
+
 header.masthead {
   position: relative;
   overflow: hidden;
   padding-top: calc(20rem + 72px);
   padding-bottom: 10rem;
   padding-right: 80rem;
-  background-image: image-url("/assets/1.jpg");
-  -webkit-text-fill-color: #ef5f33;
+  // background-image: image-url("/assets/1.jpg");
+  -webkit-text-fill-color: white;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
-  height: 600px;
+  height: 800px;
 }
 
 .btn-xl {
@@ -46,10 +50,8 @@ header.masthead .masthead-content .masthead-heading {
 }
 
 header.masthead .masthead-content .masthead-subheading {
-  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  color: white;
-  font-weight: lighter;
+  font-weight: medium;
 }
 
 .video
