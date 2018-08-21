@@ -4,27 +4,34 @@
 
   <div class="container container-blue col-xs-12 col-md-2-offset-5"></div>
 
-    <div class= "left-expertise col-xs-12 col-md-2-offset-5">
+    <div class= "profile col-xs-12 col-md-2-offset-5">
 
       <div class="container container-profile">
-        <div class="row row-profile ">
+        <div class="row-profile ">
 
           <div class="profile-avatar">
           <%= cl_image_tag(@user.avatar_url, class:"avatar-large") %>
           </div>
 
           <div class="profile-info">
-            <h1><%= @user.name%></h1>
-            <h4><%= @user.role %> years old</h4>
-            <h5><i class="fas fa-map-marker-alt"></i> <%= @user.location %></h5>
+            <div class="name-tagline">
+              <h1><%= @user.name%></h1>
+              <h4><%= @user.tagline %></h4>
+            </div>
+            <div class="role-location">
+              <h2><%= @user.role %> years old</h2>
+              <h5><i class="fas fa-map-marker-alt"></i> <%= @user.location %></h5>
+            </div>
+
           </div>
+        <!--   <div class="row row-tagline"> -->
+            <!-- <div class="profile-tagline"> -->
+
+            <!-- </div> -->
+<!--           </div> -->
         </div>
 
-        <div class="row row-tagline">
-          <div class="profile-tagline">
-            <h2><%= @user.tagline %></h2>
-          </div>
-        </div>
+
 
       </div>
 
