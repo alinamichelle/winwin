@@ -3,8 +3,8 @@
       <div class="modal-content">
 
         <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">WishList</h4>
+        <div class="modal-header ">
+          <h4 class="heading">Add your Wishes</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
@@ -12,7 +12,7 @@
         <div class="modal-body">
           <%= simple_form_for [@user, @wish] do |f| %>
             <%= f.input :description %>
-            <%= f.submit "Create", class: "btn-small" %>
+            <%= f.submit "Add", class: "btn-small" %>
           <% end %>
         </div>
 

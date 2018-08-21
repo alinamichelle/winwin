@@ -78,17 +78,20 @@
 }
 
 .btn-nav {
-  padding: 8.5px;
-  background-color: #FF6B00;
-  font-size: 13px;
+  background-color: rgb(253, 120, 84);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  text-decoration: none;
+  margin: 4px 4px;
+  cursor: pointer;
   border-radius: 4px;
-  color: white;
-  font-weight: normal;
-  letter-spacing: 0.5px;
+  font-weight: lighter;
+  font-size: 14px;
 }
+
 .btn-nav:hover {
-  background-color: #f28e46;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  background-color: white;
+  color: rgb(253, 120, 84);
+  border: 1px solid rgba(31,32,65, 0.1);
 }
