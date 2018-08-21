@@ -17,10 +17,13 @@ header.masthead {
   height: 100vh;
 }
 
-.quote {
+.title {
   padding: 20px;
-
+  font-family: "Montserrat";
+  font-size: 30px;
+  text-align: center;
 }
+
 .icon {
   padding: 50px;
   text-align: center;
@@ -93,4 +96,9 @@ header.masthead .masthead-content .masthead-subheading {
   justify-content: center;
   width: 100vw;
   height: 100vh;
+}
+
+.card-landing {
+  padding: 20px;
+  text-align: center;
 }
