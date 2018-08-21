@@ -11,7 +11,7 @@
         <!-- Modal body -->
         <div class="modal-body">
           <%= simple_form_for [@user, @wish] do |f| %>
-            <%= f.input :description %>
+            <%= f.input :description, :placeholder => 'Whats something youve always wanted to do..', class: "placeholder-text" %>
             <%= f.submit "Add", class: "btn-small" %>
           <% end %>
         </div>
