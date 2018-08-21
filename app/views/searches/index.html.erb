@@ -8,7 +8,7 @@
             <%= link_to user_path(result) do %>
               <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(' <%= cl_image_path result.avatar_url, :gravity=>"face" %> ')">
                 <div class="card-location">
-                  <p> <%= result.location %></p>
+                  <p> <i class="fas fa-map-marker-alt"></i> <%= result.location %></p>
                 </div>
                   <p class="card-description"><%= result.name %></p>
               </div>
