@@ -39,9 +39,24 @@
   text-align: left;
   padding: 10px;
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .back {
-  color: #66B9BF;
+  color: orange;
+}
+
+.back:hover {
+  color: #FF6B00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.messages-btn {
+  font-size: 15px;
+  background-color: #FF6B00;
+}
+
+.messages-btn:hover {
+  background-color: #FFA43A;
 }
