@@ -5,7 +5,7 @@
 .container-blue {
   height: 200px;
   background: linear-gradient(0deg, #78E0DA 0%, #66D2EA 80%);
-  padding: 110px 40px 0 0;
+
   // background: linear-gradient(0deg, #FD7905 0%, #78E1DB 100%);
 }
 
@@ -37,6 +37,7 @@
 
 .profile-info {
   text-align: left;
+  width: relative;
 }
 
 .profile-info h1 {
@@ -53,11 +54,11 @@
   font-size: 18px;
 }
 
-.profile-tagline {
-  text-align: right;
-  margin-right: 100px;
-  padding-bottom: 100px;
-}
+// .profile-tagline {
+//   text-align: right;
+//   margin-right: 100px;
+//   padding-bottom: 100px;
+// }
 
 .profile-tagline h2 {
   font-size: 24px;
@@ -83,10 +84,10 @@
 // }
 
 .left-expertise {
+  background-color: white;
   margin-bottom: 40px;
   text-align: center;
-  border-radius: 4px;
-  box-shadow: 0 0 1px rgba(0,0,0,0.5);
+  box-shadow: 0 0 1px rgba(0,0,0,0.2);
   margin-bottom: 30px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -99,6 +100,7 @@
 }
 
 .left-wishlist {
+  background-color: white;
   margin-bottom: 40px;
   text-align: center;
   border-radius: 4px;
@@ -110,12 +112,14 @@
 }
 
 .left-wishlist h2 {
+  background-color: white;
   text-align: center;
   font-size: 20px;
   color: #1F2041;
 }
 
 .expertise-list {
+  background-color: white;
   list-style: none;
   margin: 0px;
   padding: 0px;

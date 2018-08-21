@@ -112,6 +112,7 @@ SimpleForm.setup do |config|
   # How the label text should be generated altogether with the required text.
 
   # You can define the class to use on all labels. Default is nil.
+
   # config.abbr_class = nil
 
   # You can define the default class to be used on forms. Can be overriden

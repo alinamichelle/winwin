@@ -2,21 +2,21 @@
 
   <div class="container">
 
-    <div class="container container-blue"></div>
+  <div class="container container-blue col-xs-12 col-md-2-offset-5"></div>
 
+    <div class= "left-expertise col-xs-12 col-md-2-offset-5">
 
       <div class="container container-profile">
-        <div class="row row-profile">
+        <div class="row row-profile ">
+
           <div class="profile-avatar">
           <%= cl_image_tag(@user.avatar_url, class:"avatar-large") %>
           </div>
+
           <div class="profile-info">
             <h1><%= @user.name%></h1>
             <h4><%= @user.role %> years old</h4>
             <h5><i class="fas fa-map-marker-alt"></i> <%= @user.location %></h5>
-          </div>
-          <div class="edit-profile">
-            <button class="btn-small-blue btn-profile-interaction">EDIT PROFILE</button>
           </div>
         </div>
 
