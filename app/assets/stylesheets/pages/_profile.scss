@@ -103,6 +103,7 @@
   font-size: 20px;
   font-weight: bold;
   color: #33b4d0;
+  margin-top: 20%;
   }
   p {
     font-size: 18px;
@@ -179,4 +180,8 @@
   }
 }
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
 
