@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'searches/index'
   get 'wishes/new'
   get 'users/profile', to: 'users#profile'
-
+  get 'errors/404error'
 
   resources :wishes, only: [:destroy]
 
