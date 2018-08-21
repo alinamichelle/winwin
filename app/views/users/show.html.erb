@@ -1,11 +1,14 @@
-<div class="wrapper">
 
   <div class="container">
-
-  <div class="container container-blue col-xs-12 col-md-2-offset-5"></div>
+    <div class="container-blue col-xs-12 col-md-2-offset-5">
+      <div class="container-blue">
+        <div class="message-button">
+          <%= link_to "Message", "#testMessage", "data-toggle" => "modal", class:"btn btn-small" %>
+          <%= render "shared/modal_for_message" %>
+        </div>
+      </div>
 
     <div class= "profile col-xs-12 col-md-2-offset-5">
-
       <div class="container-profile">
         <div class="row-profile ">
 
@@ -26,8 +29,6 @@
           </div>
 
         </div>
-
-
 
       </div>
 
@@ -99,4 +100,3 @@
 
   </div>
 
-</div>

@@ -15,18 +15,28 @@
     <!-- List of messages -->
     <div class="message-list">
       <div class="row borders heading">
-        <div class="col-xs-3 text-heading"><i class="fas fa-user icons-messages"></i>Sender</div>
+        <div class="col-xs-4 text-heading"><i class="fas fa-user icons-messages"></i>Sender</div>
         <div class="col-xs-2">✔ Status</div>
-        <div class="col-xs-5 text-heading"><i class="fas fa-envelope icons-messages"></i></i>Message</div>
+        <div class="col-xs-4 text-heading"><i class="fas fa-envelope icons-messages"></i></i>Message</div>
         <div class="col-xs-2"></div>
       </div>
 
       <div class="row ">
         <% @messages.each do |message| %>
         <ul class="spacing_messages">
-          <div class="col-xs-3 ">
           <li>
-            <%= message.sender == current_user ? message.receiver.name : message.sender.name %>
+          <div class="col-xs-4" style="justify-content: space-between;">
+            <% if message.sender == current_user %>
+             <div class="col-xs-3">
+                <%= cl_image_tag(message.receiver.avatar_url, class: 'avatar-small') %>
+            </div>
+            <div class="col-xs-9" style="margin-top: 10px;">
+                <%= message.receiver.name%>
+            </div>
+            <% else %>
+              <%= cl_image_tag(message.sender.avatar_url, class: 'avatar-small') %>
+              <%= message.sender.name %>
+            <% end %>
           </div>
 
           <div class="col-xs-2">
@@ -37,7 +47,7 @@
             <% end %>
           </div>
 
-          <div class="col-xs-5">
+          <div class="col-xs-4">
             <%= message.content %> ...
           </div>
 

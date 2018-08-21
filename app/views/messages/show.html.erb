@@ -8,9 +8,9 @@
         </div>
 
 
-        <div class = "chat-title">
-          <%#= @user.avatar_url %>
-          <p>Chatting with <%=@user_receiver.name%> </p>
+        <div class="chat-title">
+          <%= cl_image_tag(@user_receiver.avatar_url, class: 'avatar-small') %>
+          <p class="message-title">Chatting with <%= @user_receiver.name %> </p>
         </div>
 
 
@@ -19,8 +19,7 @@
             <div class="col-xs-1"> -->
               <% @messages.each do |message| %>
               <div class="message
-                <%= message.sender == current_user ? 'text-right'  : ''%>
-                <%= message.sender == current_user ? 'text-primary'  : ''%>">
+                <%= message.sender == current_user ? 'text-right own-text'  : 'text-left other-text' %>">
                 <p><%= message.content %></p>
                 <!-- <img class="avatar-small-messages"> -->
               </div>
@@ -33,7 +32,7 @@
         <%= simple_form_for [@user_receiver, @message_new] do |ef| %>
         <%= ef.input :content, as: :text %>
           <div class="text-right">
-          <%= ef.button :submit, "Send", class: "btn-small" %>
+          <%= ef.button :submit, "Send", class: "btn-small messages-btn" %>
           </div>
         <% end %>
       </div>

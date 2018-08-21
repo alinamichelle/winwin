@@ -17,6 +17,19 @@ header.masthead {
   height: 100vh;
 }
 
+.quote {
+  padding: 20px;
+
+}
+.icon {
+  padding: 50px;
+  text-align: center;
+}
+.about {
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+}
 .btn-xl {
   text-transform: uppercase;
   padding: 1.5rem 3rem;
@@ -25,6 +38,11 @@ header.masthead {
   letter-spacing: 0.1rem;
   background-color: white;
   color: #1F2041;
+}
+
+.btn-xl:hover {
+  background-color: #FB785A;
+  color: white;
 }
 
 .rounded-pill {
@@ -45,23 +63,28 @@ header.masthead {
 header.masthead .masthead-content .masthead-heading {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 80px;
+  font-size: 120px;
   color: white;
   font-weight: bold;
+  padding-bottom: 15px;
 }
 
 header.masthead .masthead-content .masthead-subheading {
   font-size: 30px;
   font-weight: medium;
+  padding-bottom: 15px;
 }
 
-.video
-{
+.video{
     position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+
+.wrapper {
+  padding: 20px;
 }
 
 .home-flex {
