@@ -7,6 +7,18 @@
   background: linear-gradient(0deg, #78E0DA 0%, #66D2EA 80%);
 }
 
+// .container-message {
+//   height: 200px;
+//   background: linear-gradient(0deg, #78E0DA 0%, #66D2EA 80%);
+//   text-align: right;
+// }
+
+.message-button {
+  padding: 140px 40px 10px 0;
+  text-align: right;
+  z-index: 999;
+}
+
 .profile {
   background-color: white;
   margin-bottom: 40px;
@@ -19,6 +31,7 @@
   height: 250px;
   top: 85px;
   margin-top: -130px;
+  pointer-events: none;
 }
 
 .row-profile {
