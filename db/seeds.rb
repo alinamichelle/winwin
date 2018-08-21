@@ -8,6 +8,9 @@
 require 'faker'
 Expertise.destroy_all
 Topic.destroy_all
+Message.destroy_all
+Wish.destroy_all
+Wishlist.destroy_all
 User.destroy_all
 
 puts "creating 10 topics"
