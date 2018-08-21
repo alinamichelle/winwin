@@ -25,8 +25,8 @@ class MessagesController < ApplicationController
     @messages = Message.where(receiver: [@user_receiver, current_user], sender: [@user_receiver, current_user])
 
 
-    # @message = Message.find(params[:id])
-    # @message.update(read: true)
+    @message = Message.find(params[:id])
+    @message.update(read: true)
   end
 
   def create
