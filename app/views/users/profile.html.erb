@@ -40,22 +40,19 @@
               <div class="left-wishlist">
 
                 <div class="flex-container">
-                  <div class="flex item">
-                    <%= image_tag 'owlicon.svg', class:"icon" %>
+                  <div class="flex-item">
+                    <%= image_tag 'owlicon.svg', class:"orange-owl" %>
                   </div>
-                  <div class="flex item">
+                  <div class="flex-item">
                     <h2><strong>My Stories</strong></h2>
                   </div>
                 </div>
 
 <style>
-  .flex-container {
-    display: flex;
-    justify-content: center;
-  }
+.orange-owl {
+  width: 50px;
+}
 </style>
-
-
                 <ul class="expertise-list">
                   <% @user.expertises.each do |expertise| %>
                     <li><%= expertise.topic.name %></li>

@@ -180,7 +180,8 @@
   }
 }
 
-.icon {
-  width: 50px;
-  heigth: 50px;
-}
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
+
