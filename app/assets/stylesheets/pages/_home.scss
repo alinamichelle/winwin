@@ -43,6 +43,7 @@ header.masthead {
 
 
 header.masthead .masthead-content .masthead-heading {
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 80px;
   color: white;
@@ -63,3 +64,9 @@ header.masthead .masthead-content .masthead-subheading {
     min-height: 100%;
 }
 
+.home-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
