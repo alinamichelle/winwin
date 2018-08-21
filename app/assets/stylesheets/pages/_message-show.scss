@@ -5,20 +5,25 @@
   border-radius: 2px;
 }
 
+.message-title {
+  padding-top: 10px;
+}
+
 .message-body {
-  padding-top: 20px;
+  padding-top: 50px;
   border-bottom: 1px solid rgba(31,32,65, 0.1);
   border-radius: 2px;
   // background-color: gray;
+  padding-bottom: 30px;
 }
 
 .chat-body {
-  padding-top: 50px;
-  margin-bottom: 20px;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 .chat-title {
-  padding-bottom: 10px;
+  padding-bottom: 100px;
   padding-top: 5px;
   height: 40px;
   width: 100%;
@@ -59,4 +64,12 @@
 
 .messages-btn:hover {
   background-color: #FFA43A;
+}
+
+.own-text {
+  color: #66B9BF;
+}
+
+.other-text {
+  color: #1F2041;
 }
