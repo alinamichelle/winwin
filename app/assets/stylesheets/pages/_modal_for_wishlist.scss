@@ -8,19 +8,18 @@ input[type=text]:focus {
   border: 1px solid rgba(31,32,65, 0.1);
 }
 
+.wish-title {
+  text-align: left;
+}
+
 .wish-input {
-  margin: 0;
+  margin: 20px;
+  text-align: left;
+
 }
 .placeholder-text {
   font-style: italic;
   font-weight: lighter;
 }
-// input[type=submit], input[type=reset] {
-//     background-color: rgb(253, 120, 84);
-//     border: none;
-//     color: white;
-//     padding: 10px 15px;
-//     text-decoration: none;
-//     margin: 4px 4px;
-//     cursor: pointer;
-// }
+
+
