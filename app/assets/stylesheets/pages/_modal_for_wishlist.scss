@@ -10,6 +10,30 @@ input[type=text]:focus {
 
 .wish-title {
   text-align: left;
+  padding-bottom: 40px;
+}
+
+.modal-btn {
+  background-color: rgb(253, 120, 84);
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: lighter;
+  font-size: 14px;
+  border: 1px solid rgba(253, 120, 84, 0.15);
+}
+
+.modal-btn:hover {
+  background-color: white;
+  color: rgb(253, 120, 84);
+  border: 1px solid rgba(253, 120, 84, 0.15);
+}
+
+.wish-input {
+  padding: 40px;
 }
 
 .expertise-title {
@@ -24,10 +48,10 @@ input[type=text]:focus {
   padding: 15px 0px;
 }
 
-.wishplaceholder-text {
+.form-control {
   font-style: italic;
   font-weight: lighter;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .level-button {
@@ -38,6 +62,10 @@ input[type=text]:focus {
 .level-text {
   font-size: 14px;
   font-weight: lighter;
+}
+
+.list {
+  padding: 40px;
 }
 
 .select {

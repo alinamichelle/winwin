@@ -12,13 +12,13 @@
         <!-- Modal body -->
         <div class="modal-body wish-input">
 
-          <h4 class="wish-title">Add your Wishes</h4>
+          <h4 class="modal-title wish-title">Add your Wishes</h4>
 
           <%= simple_form_for [@user, @wish] do |f| %>
 
-            <%= f.input :description, :placeholder => 'Whats something youve always wanted to do..', class: "wishplaceholder-text", label: false, height: 200 %>
+            <%= f.input :description, :placeholder => 'Whats something youve always wanted to do..', class: "wishplaceholder-text", label: false %>
 
-            <%= f.submit "Add", class: "btn-small wish-btn" %>
+            <%= f.submit "Add", class: "modal-btn" %>
           <% end %>
         </div>
 
