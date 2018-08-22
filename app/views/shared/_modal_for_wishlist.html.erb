@@ -16,7 +16,7 @@
 
           <%= simple_form_for [@user, @wish] do |f| %>
 
-            <%= f.input :description, :placeholder => 'Whats something youve always wanted to do..', class: "placeholder-text wish-input", label: false, height: 200 %>
+            <%= f.input :description, :placeholder => 'Whats something youve always wanted to do..', class: "wishplaceholder-text", label: false, height: 200 %>
 
             <%= f.submit "Add", class: "btn-small wish-btn" %>
           <% end %>
