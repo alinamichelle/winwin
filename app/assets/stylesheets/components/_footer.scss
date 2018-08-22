@@ -1,0 +1,38 @@
+.footer {
+  // box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  // position: relative;
+  // left:0px;
+  // margin: 0 auto;
+  bottom:0px;
+  margin-top: 30px;
+  width:100%;
+  background: white;
+  transition: all 0.3s ease;
+  height: 70px;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-icon {
+  color: #717072;
+  padding: 10px;
+}
+.footer-links {
+  font-size: 22px;
+  color: #717072;
+  :hover {
+    color: #ff6a43;
+    text-decoration: none;
+  }
+}
+.change-color {
+  color: #ff6a43;
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-copyright {
+  font-family: 'Montserrat', sans-serif;
+}
