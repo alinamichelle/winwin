@@ -9,7 +9,7 @@
         </div>
 
         <!-- Modal body -->
-        <div class="modal-body">
+        <div class="modal-body wish-input">
           <%= simple_form_for [@user, @wish] do |f| %>
             <%= f.input :description, :placeholder => 'Whats something youve always wanted to do..', class: "placeholder-text" %>
             <%= f.submit "Add", class: "btn-small" %>
