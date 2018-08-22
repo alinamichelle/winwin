@@ -114,7 +114,7 @@ header.masthead .masthead-content .masthead-subheading {
 
 .wrapper-white {
  background-color: white;
- padding-top: 20px;
+ padding-top: 0px;
 }
 
 .wrapper-turquoise {
@@ -124,9 +124,9 @@ header.masthead .masthead-content .masthead-subheading {
 .card-landing {
   // background-color: white;
   border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  margin: 10px 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0px 0;
   /*height: 25vh;*/
   text-align: left;
   margin-right: 50px;
@@ -136,7 +136,7 @@ header.masthead .masthead-content .masthead-subheading {
   padding-top: 45px;
   padding-left: 40px;
   padding-right: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .center-boxes {
@@ -166,6 +166,10 @@ header.masthead .masthead-content .masthead-subheading {
 
 .row-body {
   padding-top: 45px;
+}
+
+.container-info {
+  text-align: center;
 }
 
 .container-summary {
