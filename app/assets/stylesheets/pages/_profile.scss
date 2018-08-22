@@ -76,6 +76,11 @@
   margin-top: 20px;
 }
 
+.topic-name {
+  font-family:'Quicksand', sans-serif;
+  font-weight: lighter;
+  text-align: left;
+}
 .name-tagline{
   position: absolute;
   top: 3vh;
@@ -99,7 +104,7 @@
   padding: 20px;
   h2 {
   background-color: white;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-weight: bold;
   color: #33b4d0;
@@ -137,7 +142,10 @@
   margin: 0px;
   padding: 0px;
   padding-bottom: 20px;
-  font-size: 15px;
+  font-size: 18px;
+  font-family:'Quicksand', sans-serif;
+  font-weight: lighter;
+  text-align: left;
 }
 
 
