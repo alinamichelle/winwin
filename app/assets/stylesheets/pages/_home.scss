@@ -18,12 +18,16 @@ header.masthead {
 }
 
 .title {
-  padding: 20px;
+  padding: 30px;
   font-family: "Montserrat";
   font-size: 30px;
   text-align: center;
+  color: #ff6a43;
+  font-weight: lighter;
+  border-bottom: 1px solid #ff6a43;
+  border-top: 1px solid #ff6a43;
+  max-width: 93%;
 }
-
 
 .about {
   font-size: 40px;
@@ -95,26 +99,22 @@ header.masthead .masthead-content .masthead-subheading {
   height: 100vh;
 }
 
-.card-landing {
-  padding: 20px;
-  text-align: left;
-}
 
 .header-home h2 {
   text-align: center;
   font-weight: 200;
   font-size: 25px;
-
 }
 
 .header-text {
- position: absolute;
- bottom: 230px;
- right: 485px;
+  position: absolute;
+  bottom: 230px;
+  right: 485px;
 }
 
 .wrapper-white {
  background-color: white;
+ padding-top: 20px;
 }
 
 .wrapper-turquoise {
@@ -122,16 +122,21 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 .card-landing {
- // background-color: white;
- border-radius: 5px;
- padding: 15px;
- margin: 10px 0;
- /*height: 25vh;*/
- text-align: left;
+  // background-color: white;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 10px 0;
+  /*height: 25vh;*/
+  text-align: left;
+  margin-right: 50px;
 }
 
 .container-how-to {
-  padding: 15px;
+  padding-top: 45px;
+  padding-left: 40px;
+  padding-right: 0px;
+  padding-bottom: 50px;
 }
 
 .center-boxes {
@@ -139,16 +144,10 @@ header.masthead .masthead-content .masthead-subheading {
   justify-content: space-around;
 }
 
-.title {
-  color: #ff6a43;
-  text-decoration: underline;
-  text-decoration: underline overline;
-}
-
 .h3 {
   font-weight: 200;
   font-size: 23px;
-  line-height: 30px;
+  color: #ff6a43;
 }
 
 .p {
@@ -165,6 +164,13 @@ header.masthead .masthead-content .masthead-subheading {
   -webkit-text-stroke: 2px white; /* background color */
 }
 
+.row-body {
+  padding-top: 45px;
+}
+
+.container-summary {
+  padding-bottom: 70px;
+}
 
 
 
