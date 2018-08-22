@@ -4,7 +4,8 @@
 
 .card-index {
   // height: 175px;
-  border-radius: 1px;
+  border-radius: 3px;
+  border: 5px solid white;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background-position: center;
   background-size: cover;
@@ -23,42 +24,43 @@
   // -webkit-animation-iteration-count: infinite;
 }
 
-@keyframes bounce {
-  0%, 100%, 20%, 50%, 80% {
-    -webkit-transform: translateY(0);
-    -ms-transform:     translateY(0);
-    transform:         translateY(0)
-  }
-  40% {
-    -webkit-transform: translateY(-30px);
-    -ms-transform:     translateY(-30px);
-    transform:         translateY(-30px)
-  }
-  60% {
-    -webkit-transform: translateY(-15px);
-    -ms-transform:     translateY(-15px);
-    transform:         translateY(-15px)
-  }
-}
+// @keyframes bounce {
+//   0%, 100%, 20%, 50%, 80% {
+//     -webkit-transform: translateY(0);
+//     -ms-transform:     translateY(0);
+//     transform:         translateY(0)
+//   }
+//   40% {
+//     -webkit-transform: translateY(-30px);
+//     -ms-transform:     translateY(-30px);
+//     transform:         translateY(-30px)
+//   }
+//   60% {
+//     -webkit-transform: translateY(-15px);
+//     -ms-transform:     translateY(-15px);
+//     transform:         translateY(-15px)
+//   }
+// }
 
 .card-index:hover {
   cursor: pointer;
   animation-name: bounce;
   -moz-animation-name: bounce;
-  box-shadow: 0 0 10px #66B9BF;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .card-index:hover {
-  box-shadow: 0 0 10px #66B9BF;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .card-body {
   height: 200px;
   background-size: cover;
-  color: white;
   position: relative;
-  text-shadow: 1px 1px 0 #000;
-  // border-radius: 50%;
+  p {
+    color:white;
+    text-shadow: 1px 1px 0 #000;
+  }
 }
 
 .card-location {
@@ -74,13 +76,13 @@
 
 .card-description {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 10px;
 }
 
 .card-footer {
   // display: flex;
-  min-height: 80px;
+  min-height: 60px;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
@@ -89,11 +91,11 @@
   // margin-bottom: 100px;
 }
 
-.card-footer p {
-  color: #999999;
-  font-weight: lighter;
-  font-size: 12px;
-}
+// .card-footer p {
+//   color: #999999;
+//   font-weight: lighter;
+//   font-size: 12px;
+// }
 
 .card-footer a {
   text-decoration: none;
@@ -105,7 +107,7 @@
 }
 
 .card-footer .controls i {
-  padding: 0 10px;
+  // padding: 0 10px;
   color: black;
   opacity: 0.2;
 }

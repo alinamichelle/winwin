@@ -1,19 +1,29 @@
 <div class="results-title text-center"><h1 class="heading-index">Find a Storyteller</h1></div>
 <div class="container">
-  <div class="results-container search-form col-lg-3 col-sm-12 left">
+  <div class="results-container-left search-form col-lg-3 col-sm-12 left">
       <div class="row">
         <%= simple_form_for :search, url: searches_index_path, method: :get do |f| %>
 
         <div class="topic">
-          <%= f.input_field :query, :placeholder => 'Add Topic' %>
+          <%= f.input_field :query, :style => "min-width: 20px", :placeholder => 'Search...', class: "placeholder-text" %>
         </div>
 
         <div class="location">
-          <%= f.input_field :qlocation, :placeholder => 'Choose Location'%>
+          <%= f.input_field :qlocation, :style => "min-width: 20px", :placeholder => 'Location',  class: "placeholder-text"%>
         </div>
-
+      <h6>Specify a gender</h6>
+      <div class="list in-line">
+        <div class="radio-tags">
+          <%= label_tag(:gender_male,   "Male") %>
+          <%= radio_button_tag(:gender, "male") %>
+          <%= label_tag(:gender_male,   "Female") %>
+          <%= radio_button_tag(:gender, "female") %>
+          <%= label_tag(:gender_male,   "Other") %>
+          <%= radio_button_tag(:gender, "other") %>
+        </div>
+      </div>
         <div class="search-btn">
-          <%= f.submit "Search", class: "btn-nav" %>
+          <%= f.submit "Search", class: "btn-nav-search" %>
         </div>
       <% end %>
     </div>
@@ -33,8 +43,6 @@
               </div>
 
               <div class="card-footer">
-
-                <p><%= result.name %><p>
 
                 <ul class="list-inline">
                   <li><a href=""><i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
