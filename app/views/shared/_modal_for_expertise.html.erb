@@ -4,35 +4,45 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Expertise</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
-          <div class="list in-line">
-           <label>What can people contact you about and how much would you say you know?</label>
-            <%= simple_form_for [@user, @expertise] do |ef| %>
-            <%= ef.input :topic_id, as: :select, collection: Topic.all %>
+          <div class="list in-line expertise-title">
+            <h4 class="modal-title">Expertise</h4>
+              <label class="expertise-description">What story would you like to share with others?</label>
+              <%= simple_form_for [@user, @expertise] do |ef| %>
 
-        <div class="list in-line">
-          <%= label_tag(:experience,   "little") %>
-          <%= radio_button_tag(:experience, "little") %>
-          <%= label_tag(:experience,   "some") %>
-          <%= radio_button_tag(:experience, "some") %>
-          <%= label_tag(:experience,   "a fair amount") %>
-          <%= radio_button_tag(:experience, "fair") %>
-          <%= label_tag(:experience,   "quite a lot") %>
-          <%= radio_button_tag(:experience, "alot") %>
-          <%= label_tag(:experience,   "I'm an expert") %>
-          <%= radio_button_tag(:experience, "expert") %>
+              <%= ef.input :topic_id, as: :select, collection: Topic.all, label: false %>
+              <label class="expertise-description">How much do you know about the topic?</label>
+              <div class="level-button">
+              <%= radio_button_tag(:experience, "little") %>
+              <%= label_tag(:experience,   "little", class: "level-text" ) %>
+              </div>
+              <div class="level-button">
+              <%= radio_button_tag(:experience, "some") %>
+              <%= label_tag(:experience,   "some", class: "level-text") %>
+              </div>
+              <div class="level-button">
+              <%= radio_button_tag(:experience, "fair") %>
+              <%= label_tag(:experience,   "a fair amount", class: "level-text") %>
+              </div>
+              <div class="level-button">
+              <%= radio_button_tag(:experience, "alot") %>
+              <%= label_tag(:experience,   "quite a lot", class: "level-text") %>
+              </div>
+              <div class="level-button">
+              <%= radio_button_tag(:experience, "expert") %>
+              <%= label_tag(:experience,   "I'm an expert", class: "level-text") %>
+              </div>
         </div>
-        </div>
+
 
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <%= ef.button :submit, "Update" %>
+          <%= ef.button :submit, "Update", class: "modal-btn" %>
 
         </div>
     <% end %>

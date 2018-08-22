@@ -8,16 +8,94 @@ input[type=text]:focus {
   border: 1px solid rgba(31,32,65, 0.1);
 }
 
-.placeholder-text {
+.wish-title {
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.modal-btn {
+  background-color: rgb(253, 120, 84);
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: lighter;
+  font-size: 14px;
+  border: 1px solid rgba(253, 120, 84, 0.15);
+}
+
+.modal-btn:hover {
+  background-color: white;
+  color: rgb(253, 120, 84);
+  border: 1px solid rgba(253, 120, 84, 0.15);
+}
+
+.wish-input {
+  padding: 40px;
+}
+
+.expertise-title {
+  text-align: left;
+  font-size: 14px;
+}
+
+.expertise-description {
+  text-align: left;
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 15px 0px;
+}
+
+.form-control {
   font-style: italic;
   font-weight: lighter;
+  font-size: 12px;
 }
-// input[type=submit], input[type=reset] {
-//     background-color: rgb(253, 120, 84);
-//     border: none;
-//     color: white;
-//     padding: 10px 15px;
-//     text-decoration: none;
-//     margin: 4px 4px;
+
+.level-button {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.level-text {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.list {
+  padding: 40px;
+}
+
+.select {
+  font-size: 12px;
+  font-weight: lighter;
+}
+// .checkmark {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 25px;
+//   width: 25px;
+//   background-color: black;
+// }
+
+// .list input {
+//     position: absolute;
+//     opacity: 0;
 //     cursor: pointer;
+// }
+
+// .levels {
+//   display: block;
+//     position: relative;
+//     padding-left: 35px;
+//     margin-bottom: 12px;
+//     cursor: pointer;
+//     font-size: 22px;
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
 // }
