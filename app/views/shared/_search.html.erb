@@ -1,9 +1,13 @@
 
 
-   <div class="form-inputs form-inline ">
+   <div class="form-inputs form-inline w3-row">
+    <div class="field-width">
     <%= simple_form_for :search, url: searches_index_path, method: :get do |f| %>
-      <%= f.input_field :query, :placeholder => 'Search...', class: "placeholder-text" %>
-      <%= f.input_field :qlocation, :placeholder => 'Location',  class: "placeholder-text"%>
+      <%= f.input_field :query, :style => "min-width: 20px", :placeholder => 'Search...', class: "placeholder-text" %>
+      <%= f.input_field :qlocation, :style => "min-width: 20px", :placeholder => 'Location',  class: "placeholder-text"%>
       <%= f.submit "Search", class: "btn-nav" %>
     <% end %>
+    </div>
   </div>
+
+
