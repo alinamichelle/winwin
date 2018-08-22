@@ -103,15 +103,19 @@
   font-weight: lighter;
   color: #66D2EA;
   }
-  li {
-    font-size: 15px;
+  ul {
     list-style: none;
+    padding: 0px;
   }
+
+  li {
+    list-style: none;
+    padding-left: 1em;
+    text-indent: -.7em;
+  }
+
   ol {
     padding-bottom: 0;
-  }
-  ul {
-    padding: 0px;
   }
 }
 

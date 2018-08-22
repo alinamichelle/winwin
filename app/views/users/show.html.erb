@@ -7,6 +7,7 @@
           <%= render "shared/modal_for_message" %>
         </div>
       </div>
+    </div>
 
     <div class= "profile col-xs-12 col-md-2-offset-5">
       <div class="container-profile">
@@ -50,6 +51,7 @@
                 </div>
 
                   <% @user.expertises.each do |expertise| %>
+                  <ul>
                     <li><%= expertise.topic.name %></li>
                     <li><%= expertise.experience %></li>
                   <% end %>
