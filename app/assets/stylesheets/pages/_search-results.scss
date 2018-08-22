@@ -1,8 +1,8 @@
-.search-container {
-  padding-top: 20px;
+.big-search-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color:white;
   border-radius: 3px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.4);
 }
 
 .results-container {
@@ -13,12 +13,13 @@
 }
 
 .results-container-left {
-  padding: 33px;
-  // padding-right: 40px;
+  padding-bottom: 33px;
+  padding-right: 33px;
+  padding-left: 33px;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.4);
 }
+
 .search-form {
   background-color: white;
 }
@@ -53,6 +54,10 @@
     padding: 4px;
     margin-bottom: 0px;
   }
+}
+
+.btn-gnd {
+  padding: 10px;
 }
 
 .btn-nav-search {
