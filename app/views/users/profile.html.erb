@@ -48,11 +48,6 @@
                   </div>
                 </div>
 
-<style>
-.orange-owl {
-  width: 50px;
-}
-</style>
                 <ul class="expertise-list">
                   <% @user.expertises.each do |expertise| %>
                     <li><%= expertise.topic.name %></li>
@@ -64,6 +59,7 @@
               </div>
 
               <div class="left-wishlist">
+
                   <h2>Wishlist</h2>
                   <ol class="wishlist-list">
                     <% @user.wishes.each do |wish| %>
