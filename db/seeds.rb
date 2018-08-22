@@ -64,7 +64,7 @@ User.create!([{
     name: Faker::Name.name,
     role: 21,
     birthday: "1996-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1designstudent",
     tagline: "Waffles are just pancakes with abs.",
     biography: "Bacon fanatic. Explorer. Music scholar. Internetaholic. Organizer. Introvert. Writer. Twitter aficionado."
@@ -76,9 +76,9 @@ User.create!([{
     name: Faker::Name.name,
     role: 61,
     birthday: "1956-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1gypsylady",
-    tagline: "I live for bacon",
+    tagline: "It always seems impossible until its done.",
     biography: "Lifelong introvert. Zombie maven. Passionate internet enthusiast."
   },
 
@@ -88,7 +88,7 @@ User.create!([{
     name: "Louise Veronica Ciccone",
     role: 71,
     birthday: "1946-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1Zlat_a_Luc_218",
     tagline: "Difficult roads often lead to beautiful destinations.",
     biography:  "I was born in Bay City, Michigan, on August 16, 1958, to parents Silvio 'Tony' Ciccone and Madonna Fortin. Tony, the son of Italian immigrants, was the first of his family to go to college, where he earned a degree in engineering."
@@ -100,7 +100,7 @@ User.create!([{
     name: "Rosa Beltrán",
     role: 69,
     birthday: "1949-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1redheadlady",
     tagline: "Don't just exist, live.",
     biography: "I was born in El Rosario Sinaloa, where I completed secretarial studies and participated in singing competitions. I then moved to Mexico City but would return often to Rosario, working as a secretary at Mexico's number-one radio station, XEW."
@@ -112,7 +112,7 @@ User.create!([{
     name: "Sam Wong",
     role: 79,
     birthday: "1938-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1old-man",
     tagline: "Make it simple but significant.",
     biography: "Organizer. Thinker. Reader. Lifelong travel aficionado. Communicator. Proud tv enthusiast. Friendly music fan. Evil food lover."
@@ -136,9 +136,9 @@ User.create!([{
     name: "Frank Black",
     role: 61,
     birthday: "1956-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1bowtie",
-    tagline: "I can't wait to be old enough to pretend I can't hear",
+    tagline: "I can't wait to be old enough to pretend I can't hear.",
     biography: "Come fly with me, let's float down to Peru. In llama land, there's a one man band, and he'll toot his flute for you; come on."
   },
 
@@ -148,9 +148,9 @@ User.create!([{
     name: "Loretta Lina",
     role: 61,
     birthday: "1956-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1whitelady_copie",
-    tagline: "Keep calm and rock on",
+    tagline: "Keep calm and rock on.",
     biography: "Well, I was born a coal miner's daughter. In a cabin on a hill in Butcher Holler. We were poor, but we had love That's the one thing that Daddy made sure of."
   },
 
@@ -160,9 +160,9 @@ User.create!([{
     name: "Carlos Montalbán",
     role: 61,
     birthday: "1956-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1darkolderman",
-    tagline: "Si la vida te da limones, pide sal y tequila",
+    tagline: "Si la vida te da limones, pide sal y tequila.",
     biography: "He was the older brother of actor Ricardo Montalbán. Although not as famous as his younger brother, he is notable for having starred as 'El Exigente' in a series of coffee advertisements for Savarin Coffee in the 1960s and 1970s, and for portraying two different characters named 'Vargas'."
   },
 
@@ -172,9 +172,9 @@ User.create!([{
     name: "Opy Whitaker",
     role: 61,
     birthday: "1956-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1oldmanpark",
-    tagline: "Your only limit is your mind",
+    tagline: "Your only limit is your mind.",
     biography: "I was born and raised in Eastern Oklahoma, where I grew up hunting on family land and fishing on the local lake. I started a tournament career fishing with various partners including my uncles and dad and together we won many team tournaments."
   },
 
@@ -184,9 +184,9 @@ User.create!([{
     name: "Sabrina Corvo",
     role: 61,
     birthday: "1956-11-23",
-    location: "Lisbon, Portugal",
+    location: "Lisbon",
     avatar_url: "1redheadlady",
-    tagline: "No rain, no flowers",
+    tagline: "Honey... no rain, no flowers.",
     biography: 'I grew up in a small village in the mountains where we had many traditional stories and women lived in trees.'
   }])
 
