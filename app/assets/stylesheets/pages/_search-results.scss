@@ -1,9 +1,24 @@
+.container {
+  padding-top: 20px;
+  background-color:white;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.4);
+}
+
 .results-container {
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
+  border-radius: 3px;
 }
 
+.results-container-left {
+  padding: 33px;
+  // padding-right: 40px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.4);
+}
 .search-form {
   background-color: white;
 }
@@ -21,5 +36,57 @@
 }
 
 .results-title {
-  padding: 50px;
+  padding: 20px;
+  h1 {
+      color: #FF6B00;
+  }
+}
+
+.radio-tags {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+  color: rgba(50, 50, 50, 0.6);
+  font-weight: lighter;
+  label {
+    position: above;
+    padding: 4px;
+    margin-bottom: 0px;
+  }
+}
+
+.btn-nav-search {
+  background-color: rgb(253, 120, 84);
+  border: none;
+  color: white;
+  padding: 6px 65px;
+  text-decoration: none;
+
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.btn-nav-search:hover {
+  background-color: white;
+  color: rgb(253, 120, 84);
+  border: 1px solid rgba(253, 120, 84, 0.15);
+}
+
+
+ h6 {
+  color: rgba(50, 50, 50, 0.6);
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  margin-left: -25%;
+ }
+
+.heading-index {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  margin-left: 110px;
+  margin-right: 110px;
 }
