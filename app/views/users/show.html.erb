@@ -40,8 +40,16 @@
 
             <div class="col-sm-4">
               <div class="left-wishlist">
-                <h2><strong>Areas of Expertise</strong></h2>
-                <ul class="expertise-list">
+
+                <div class="flex-container">
+                  <div class="flex-item">
+                    <%= image_tag 'owlicon.svg', class:"orange-owl" %>
+                  </div>
+                  <div class="flex-item">
+                    <h2><strong>My Stories</strong></h2>
+                  </div>
+                </div>
+
                   <% @user.expertises.each do |expertise| %>
                     <li><%= expertise.topic.name %></li>
                     <li><%= expertise.experience %></li>
