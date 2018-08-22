@@ -13,7 +13,8 @@
             <h4 class="modal-title">Expertise</h4>
               <label class="expertise-description">What can people contact you about and how much would you say you know?</label>
               <%= simple_form_for [@user, @expertise] do |ef| %>
-              <%= ef.input :topic_id, as: :select, collection: Topic.all, label: false%>
+
+              <%= ef.input :topic_id, as: :select, collection: Topic.all, label: false %>
 
               <div class="level-button">
               <%= radio_button_tag(:experience, "little") %>
