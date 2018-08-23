@@ -13,7 +13,7 @@ Wish.destroy_all
 Wishlist.destroy_all
 User.destroy_all
 
-puts "Creating 20 Topics"
+puts "Creating 25 Topics"
 
 Topic.create!([{
 name: "Portuguese History"
@@ -28,7 +28,7 @@ name: "Cooking"
 },
 
 {
-name: "Surfing"
+name: "Food"
 },
 
 {
@@ -36,7 +36,7 @@ name: "Yoga"
 },
 
 {
-name: "Languages"
+name: "Watersports"
 },
 
 {
@@ -64,15 +64,15 @@ name: "Guitar"
 },
 
 {
+name: "Piano"
+},
+
+{
 name: "Photography"
 },
 
 {
-name: "Philosophy"
-},
-
-{
-name: "Medicine"
+name: "Painting"
 },
 
 {
@@ -85,7 +85,35 @@ name: "Film"
 
 {
 name: "Literature"
-}])
+}
+
+name: "Medicine"
+},
+
+{
+name: "Philosophy"
+},
+
+{
+name: "Engineering"
+},
+
+{
+name: "Culture"
+},
+
+{
+name: "Hiking"
+},
+
+{
+name: "Travel"
+},
+
+{
+name: "Extreme Sports"
+}
+])
 
 
 puts "Topics saved"
