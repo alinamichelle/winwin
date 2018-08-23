@@ -30,7 +30,7 @@
              <div class="col-xs-3">
                 <%= cl_image_tag(message.receiver.avatar_url, class: 'avatar-small') %>
             </div>
-            <div class="col-xs-9" style="margin-top: 10px;">
+            <div class="col-xs-9 msg-txt" style="margin-top: 10px;">
                 <%= message.receiver.name%>
             </div>
             <% else %>
@@ -47,12 +47,12 @@
             <% end %>
           </div>
 
-          <div class="col-xs-4" style="margin-top: 10px;">
+          <div class="col-xs-4 msg-txt" style="margin-top: 10px;">
             <%= message.content %>
           </div>
 
           <div class="col-xs-2" style="margin-top: 10px;">
-            <%= link_to 'View Message', user_message_path(current_user, message), class: 'view' %>
+            <%= link_to 'view message', user_message_path(current_user, message), class: 'view' %>
           </div>
         </li>
         </ul>
