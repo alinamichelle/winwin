@@ -217,7 +217,7 @@ User.create!([{
   {
     email: "11admin@admin.com",
     password: "admin",
-    name: "Sabrina Corvo",
+    name: "Ricardo Carlos",
     role: 80,
     birthday: "1956-11-23",
     location: "Lisbon",
@@ -229,7 +229,7 @@ User.create!([{
   {
     email: "12admin@admin.com",
     password: "admin",
-    name: "Sabrina Corvo",
+    name: "Gabriel Valdemar",
     role: 62,
     birthday: "1956-11-23",
     location: "Lisbon",
@@ -241,7 +241,7 @@ User.create!([{
   {
     email: "13admin@admin.com",
     password: "admin",
-    name: "Gabriel Valdemar",
+    name: "Daniella Johansson",
     role: 69,
     birthday: "1956-11-23",
     location: "Lisbon",
