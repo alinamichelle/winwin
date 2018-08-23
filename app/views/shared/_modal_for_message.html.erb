@@ -14,20 +14,20 @@
         <!-- Modal Header -->
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-         <p> <h4 class="modal-title">Messages</h4></p>
+         <p> <h4 class="modal-title msg-title">Contacting <%= @user_receiver.name %></h4></p>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
           <%= simple_form_for [@user_receiver, @message] do |ef| %>
-          <%= ef.input :content, as: :text %>
+          <%= ef.input :content, as: :text, label: false %>
 
 
         </div>
 
         <!-- Modal footer -->
         <div class="modal-footer">
-        <%= ef.button :submit, "Send" %>
+        <%= ef.button :submit, "Send", class: " btn-nav" %>
         </div>
         <% end %>
       </div>
