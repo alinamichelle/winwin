@@ -13,34 +13,14 @@ Wish.destroy_all
 Wishlist.destroy_all
 User.destroy_all
 
-puts "creating 10 topics"
+puts "Creating 20 Topics"
 
 Topic.create!([{
-name: "Mexican History"
+name: "Portuguese History"
 },
 
 {
-name: "Polish Traditions"
-},
-
-{
-name: "Traditional folklore"
-},
-
-{
-name: "Weaving"
-},
-
-{
-name: "Fishing"
-},
-
-{
-name: "Languages"
-},
-
-{
-name: "Storytelling"
+name: "Baking"
 },
 
 {
@@ -48,50 +28,106 @@ name: "Cooking"
 },
 
 {
-name: "History"
+name: "Surfing"
+},
+
+{
+name: "Yoga"
+},
+
+{
+name: "Languages"
+},
+
+{
+name: "Dance"
+},
+
+{
+name: "Knitting & Crochet"
+},
+
+{
+name: "Fashion"
+},
+
+{
+name: "Art"
+},
+
+{
+name: "Music"
+},
+
+{
+name: "Guitar"
+},
+
+{
+name: "Photography"
+},
+
+{
+name: "Philosophy"
+},
+
+{
+name: "Medicine"
+},
+
+{
+name: "Psychology"
+},
+
+{
+name: "Film"
+},
+
+{
+name: "Literature"
 }])
 
 
-puts "topics saved"
+puts "Topics saved"
 
 
-puts "creating users"
+puts "Creating 16 Users"
 
 User.create!([{
 
     email: "1admin@admin.com",
     password: "admin",
-    name: Faker::Name.name,
+    name: "Chloe Cooper",
     role: 21,
     birthday: "1996-11-23",
     location: "Lisbon",
-    avatar_url: "1designstudent",
+    avatar_url: "youngperson",
     tagline: "Waffles are just pancakes with abs.",
-    biography: "Bacon fanatic. Explorer. Music scholar. Internetaholic. Organizer. Introvert. Writer. Twitter aficionado."
+    biography: "Introverted extrovert. I'm a performing arts scholar at RADA. I love hiking, traveling and exploring. Foodie fanatic and Twitter aficionado."
   },
 
   {
     email: "2admin@admin.com",
     password: "admin",
-    name: Faker::Name.name,
+    name: "Louise Ciccone",
     role: 61,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "1gypsylady",
-    tagline: "It always seems impossible until its done.",
-    biography: "Lifelong introvert. Zombie maven. Passionate internet enthusiast."
+    avatar_url: "madonna",
+    tagline: "Also known as 'The Queen of Pop'",
+    biography: "Singer, songwriter, actor, businesswoman, and mother. I've led quite a life…"
   },
 
   {
     email: "3admin@admin.com",
     password: "admin",
-    name: "Louise Veronica Ciccone",
+    name: "Alina Michelle",
     role: 71,
     birthday: "1946-11-23",
     location: "Lisbon",
-    avatar_url: "1Zlat_a_Luc_218",
+    avatar_url: "bakewoman",
     tagline: "Difficult roads often lead to beautiful destinations.",
-    biography:  "I was born in Bay City, Michigan, on August 16, 1958, to parents Silvio 'Tony' Ciccone and Madonna Fortin. Tony, the son of Italian immigrants, was the first of his family to go to college, where he earned a degree in engineering."
+    biography:  "Italian born and bred, moved to Lisbon 30 years ago to open a little bakery. Cooking and baking runs through my veins."
   },
 
   {
@@ -101,21 +137,21 @@ User.create!([{
     role: 69,
     birthday: "1949-11-23",
     location: "Lisbon",
-    avatar_url: "1redheadlady",
+    avatar_url: "fashionablewoman",
     tagline: "Don't just exist, live.",
-    biography: "I was born in El Rosario Sinaloa, where I completed secretarial studies and participated in singing competitions. I then moved to Mexico City but would return often to Rosario, working as a secretary at Mexico's number-one radio station, XEW."
+    biography: "I've lived quite a life. Worked as a model, photographer, and fashion designer for a number of big names before founding my own fashion house. No matter what Reese Witherspoon says, orange is definitely the new pink."
   },
 
   {
     email: "5admin@admin.com",
     password: "admin",
-    name: "Sam Wong",
+    name: "Samuel Tarver",
     role: 79,
     birthday: "1938-11-23",
     location: "Lisbon",
-    avatar_url: "1old-man",
+    avatar_url: "bookman",
     tagline: "Make it simple but significant.",
-    biography: "Organizer. Thinker. Reader. Lifelong travel aficionado. Communicator. Proud tv enthusiast. Friendly music fan. Evil food lover."
+    biography: "Thinker. Reader. Lifelong travel aficionado. I know a lot about world geography and culture from my travels and living across different continents."
   },
 
  {
@@ -127,70 +163,132 @@ User.create!([{
     location: "Lisbon, Portugal",
     avatar_url: "1aretha",
     tagline: "There is beauty in simplicity.",
-    biography: "When my soul was in the lost and found, you came along to claim it. I didn't know just what was wrong with me, until your kiss helped me name it."
+    biography: "Lover of philosophy, art, and soul music. Have played a variety of musical instruments since a young age, starting with singing, piano, guitar, and teaching myself others instruments as I grew up."
   },
 
   {
     email: "7admin@admin.com",
     password: "admin",
     name: "Frank Black",
-    role: 61,
+    role: 81,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "1bowtie",
+    avatar_url: "bowtie",
     tagline: "I can't wait to be old enough to pretend I can't hear.",
-    biography: "Come fly with me, let's float down to Peru. In llama land, there's a one man band, and he'll toot his flute for you; come on."
+    biography: "I come from a long line of dentists. But I was always attracted to the pictures, and at a young age got started working in the film industry in Hollywood. My passion is film, and I have a lot of unbelievable behind-the-scene stories to share."
   },
 
   {
     email: "8admin@admin.com",
     password: "admin",
-    name: "Loretta Lina",
-    role: 61,
+    name: "Ruth Lina",
+    role: 60,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "1whitelady_copie",
-    tagline: "Keep calm and rock on.",
-    biography: "Well, I was born a coal miner's daughter. In a cabin on a hill in Butcher Holler. We were poor, but we had love That's the one thing that Daddy made sure of."
+    avatar_url: "ruth",
+    tagline: "Everything can be solved by a good slice of cake.",
+    biography: "Pro chef, I worked in several restaurants all my life before starting my own. I love gardening and growing my own fruit, vegetables, and herbs which I use to try new recipes."
   },
 
   {
     email: "9admin@admin.com",
     password: "admin",
-    name: "Carlos Montalbán",
-    role: 61,
+    name: "Tom Rowsthorn",
+    role: 65,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "1darkolderman",
-    tagline: "Si la vida te da limones, pide sal y tequila.",
-    biography: "He was the older brother of actor Ricardo Montalbán. Although not as famous as his younger brother, he is notable for having starred as 'El Exigente' in a series of coffee advertisements for Savarin Coffee in the 1960s and 1970s, and for portraying two different characters named 'Vargas'."
+    avatar_url: "surferman",
+    tagline: "Surf the waves of life",
+    biography: "Australian stereotypical surfer, living in Lisbon for the last 35 years. Stayed for the beautiful city, the waves, and the wonderful food."
   },
 
   {
     email: "10admin@admin.com",
     password: "admin",
-    name: "Opy Whitaker",
-    role: 61,
+    name: "Julio Barbeiro",
+    role: 67,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "1oldmanpark",
-    tagline: "Your only limit is your mind.",
-    biography: "I was born and raised in Eastern Oklahoma, where I grew up hunting on family land and fishing on the local lake. I started a tournament career fishing with various partners including my uncles and dad and together we won many team tournaments."
+    avatar_url: "guitarman",
+    tagline: "Most likely to be found with a guitar in hand.",
+    biography: "Music scholar, worked as a music producer and sound engineer for several years. My passion is music and the music industry, as well as making new compositions whenever I get a chance."
   },
 
   {
     email: "11admin@admin.com",
     password: "admin",
     name: "Sabrina Corvo",
-    role: 61,
+    role: 80,
     birthday: "1956-11-23",
     location: "Lisbon",
-    avatar_url: "1redheadlady",
-    tagline: "Honey... no rain, no flowers.",
-    biography: 'I grew up in a small village in the mountains where we had many traditional stories and women lived in trees.'
-  }])
+    avatar_url: "chessman",
+    tagline: "Keep your brain active.",
+    biography: "I'm passionate about always learning new things and keeping my brain active. Lately, I have gotten really interested in chess, and learning about astronomy and astrophysics. It is insane to think about how expansive the universe really is."
+  },
+
+  {
+    email: "12admin@admin.com",
+    password: "admin",
+    name: "Sabrina Corvo",
+    role: 62,
+    birthday: "1956-11-23",
+    location: "Lisbon",
+    avatar_url: "artistman",
+    tagline: "Do something creative once a week.",
+    biography: "Artist and photographer. I own a little gallery and am constantly on the look out for talented artists, painters, and photographers to display in the gallery, to give them the exposure they deserve."
+  },
+
+  {
+    email: "13admin@admin.com",
+    password: "admin",
+    name: "Sabrina Corvo",
+    role: 69,
+    birthday: "1956-11-23",
+    location: "Lisbon",
+    avatar_url: "poolwoman",
+    tagline: "Just keep swimming",
+    biography: "I was a professional dancer and gymnast in my time. I still love to dance, and have been discovering new ways to keep active, recently I have been doing a lot of swimming and hiking."
+  },
+
+  {
+    email: "14admin@admin.com",
+    password: "admin",
+    name: "Sabrina Corvo",
+    role: 64,
+    birthday: "1956-11-23",
+    location: "Lisbon",
+    avatar_url: "profman",
+    tagline: "You're never too old to learn something new",
+    biography: "I've always been passionate about learning new things and picking up new hobbies. I have several university degrees in different subject areas from psychology to engineering, I now work as a professor teaching the new generations."
+  },
+
+  {
+    email: "15admin@admin.com",
+    password: "admin",
+    name: "Tina Andrade",
+    role: 64,
+    birthday: "1956-11-23",
+    location: "Lisbon",
+    avatar_url: "hulawoman",
+    tagline: "Dance like no one is watching",
+    biography: "Professional dancer, with a passion for inventing new recipes."
+  },
+
+  {
+    email: "16admin@admin.com",
+    password: "admin",
+    name: "Kaj Schattner",
+    role: 64,
+    birthday: "1956-11-23",
+    location: "Lisbon",
+    avatar_url: "germanman",
+    tagline: "Beer time?",
+    biography: "Berliner retired in Lisbon. Worked in the finance industry and now love to spend my time drinking new beers and traveling the country on my motorbike. Weakness for Mexican food, especially burritos. "
+  }
+
+])
 
 
-  puts "users saved"
+  puts "Users Saved"
 
 
