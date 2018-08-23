@@ -229,7 +229,7 @@ User.create!([{
   {
     email: "12admin@admin.com",
     password: "admin",
-    name: "Gabriel Valdemar",
+    name: "Gabriel Villar",
     role: 62,
     birthday: "1956-11-23",
     location: "Lisbon",
@@ -241,7 +241,7 @@ User.create!([{
   {
     email: "13admin@admin.com",
     password: "admin",
-    name: "Daniella Johansson",
+    name: "Maria Castro",
     role: 69,
     birthday: "1956-11-23",
     location: "Lisbon",
