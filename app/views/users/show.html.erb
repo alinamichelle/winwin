@@ -47,7 +47,7 @@
                     <%= image_tag 'owlicon.svg', class:"orange-owl" %>
                   </div>
                   <div class="flex-item">
-                    <h2><strong>My Stories</strong></h2>
+                    <h2>My Stories</h2>
                   </div>
                 </div>
 
@@ -61,8 +61,15 @@
               </div>
 
               <div class="left-wishlist">
-                  <h2>Wishlist</h2>
-                  <ol class="wishlist-list">
+                <div class="flex-container">
+                  <div class="flex-item">
+                    <%= image_tag 'wishlist.png', class:"orange-wish" %>
+                  </div>
+                  <div class="flex-item">
+                    <h2>My Wishlist</h2>
+                  </div>
+                </div>
+                <ol class="wishlist-list">
                     <% @user.wishes.each do |wish| %>
                       <li><%= wish.description %></li>
                     <% end %>
@@ -72,34 +79,16 @@
 
             <div class="col-sm-8">
               <div class="profile-main-content">
-                <h2>About Me</h2>
+                <h2>My Story</h2>
 
                   <div class="row row-aboutme">
                     <div class="col-sm-12">
                       <div class="aboutme-card">
-                        <h3>My Story</h3>
                         <p><%= @user.biography %></p>
                       </div>
                     </div>
                   </div>
 
-                  <div class="row row-aboutme">
-                    <div class="col-sm-12">
-                      <div class="aboutme-card">
-                        <h3>Funniest Story</h3>
-                        <p><%= @user.biography %></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row row-aboutme">
-                    <div class="col-sm-12">
-                      <div class="aboutme-card">
-                        <h3>Favourite Food</h3>
-                        <p><%= @user.biography %></p>
-                      </div>
-                    </div>
-                  </div>
               </div>
             </div>
 
