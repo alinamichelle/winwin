@@ -58,12 +58,23 @@
 }
 
 .messages-btn {
-  font-size: 15px;
-  background-color: #FF6B00;
+  background-color: rgb(253, 120, 84);
+  border: none;
+  color: white;
+  padding: 6px 6px;
+  text-decoration: none;
+  border: 1px solid rgba(253, 120, 84, 0.15);
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: lighter;
+  font-size: 14px;
 }
 
 .messages-btn:hover {
-  background-color: #FFA43A;
+  background-color: white;
+  color: rgb(253, 120, 84);
+  border: 1px solid rgba(253, 120, 84, 0.15);
+  text-decoration: none;
 }
 
 .own-text {
