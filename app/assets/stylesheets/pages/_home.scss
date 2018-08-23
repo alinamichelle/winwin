@@ -12,9 +12,8 @@ header.masthead {
   -webkit-text-fill-color: white;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
 }
 
 .title {
@@ -36,8 +35,8 @@ header.masthead {
 }
 .btn-xl {
   text-transform: uppercase;
-  padding: 1.5rem 3rem;
-  font-size: 0.9rem;
+  padding: 1.7rem 4rem;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.1rem;
   background-color: white;
@@ -76,7 +75,7 @@ header.masthead .masthead-content .masthead-heading {
 header.masthead .masthead-content .masthead-subheading {
   font-size: 30px;
   font-weight: medium;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 // .video{
@@ -178,5 +177,20 @@ header.masthead .masthead-content .masthead-subheading {
   padding-right: 0px;
 }
 
+.infographic {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+@media only screen and (max-width: 600px) {
+.infographic {
+  max-width: 80vw;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 60px;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 20px;
+  }
+}
 
