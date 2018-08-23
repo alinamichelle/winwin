@@ -178,12 +178,13 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 .infographic {
-
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 600px) {
 .infographic {
-  max-width: 70vw;
+  max-width: 80vw;
   }
   header.masthead .masthead-content .masthead-heading {
     font-size: 60px;
