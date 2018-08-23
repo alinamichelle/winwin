@@ -3,5 +3,7 @@
 meta_product_name: "WinWin"
 meta_title: "WinWin - Sharing Stories, Passing On Legacies"
 meta_description: "Search, Connect, Interact"
+
 meta_image: "1.jpg"                       # should exist in `app/assets/images/`
+
 twitter_account: "@WinWin_twitter_account"   # required for Twitter Cards
