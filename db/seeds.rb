@@ -241,7 +241,7 @@ User.create!([{
   {
     email: "13admin@admin.com",
     password: "admin",
-    name: "Sabrina Corvo",
+    name: "Gabriel Valdemar",
     role: 69,
     birthday: "1956-11-23",
     location: "Lisbon",
@@ -253,7 +253,7 @@ User.create!([{
   {
     email: "14admin@admin.com",
     password: "admin",
-    name: "Sabrina Corvo",
+    name: "André Silva",
     role: 64,
     birthday: "1956-11-23",
     location: "Lisbon",
