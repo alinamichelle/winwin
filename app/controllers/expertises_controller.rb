@@ -8,7 +8,7 @@ class ExpertisesController < ApplicationController
     if @expertise.save
       redirect_to users_profile_path
     else
-      redirect_to edit_user_path(@user)
+      redirect_to users_profile_path
     end
   end
 

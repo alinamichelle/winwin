@@ -132,7 +132,8 @@ User.create!([{
     location: "Lisbon",
     avatar_url: "youngperson",
     tagline: "Waffles are just pancakes with abs.",
-    biography: "Introverted extrovert. I'm a performing arts scholar at RADA. I love hiking, traveling and exploring. Foodie fanatic and Twitter aficionado."
+    biography: "<p>Introverted extrovert. I'm a performing arts scholar at RADA. I love hiking, traveling and exploring. Foodie fanatic and Twitter aficionado.</p>
+    <p>Introverted extrovert. I'm a performing arts scholar at RADA. I love hiking, traveling and exploring. Foodie fanatic and Twitter aficionado.</p>"
   },
 
   {
