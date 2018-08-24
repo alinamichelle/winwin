@@ -10,8 +10,8 @@
         <!-- Modal body -->
         <div class="modal-body">
           <div class="list in-line expertise-title">
-            <h4 class="modal-title">Story</h4>
-              <label class="expertise-description">What story would you like to share with others?</label>
+            <h4 class="modal-title">Experience</h4>
+              <label class="expertise-description">What life experience would you like to share with others?</label>
               <%= simple_form_for [@user, @expertise] do |ef| %>
 
               <%= ef.input :topic_id, as: :select, collection: Topic.all, label: false %>
