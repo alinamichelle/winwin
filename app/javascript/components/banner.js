@@ -2,7 +2,7 @@ import Typed from 'typed.js';
 
 function loadDynamicBannerText() {
   new Typed('#banner-typed-text', {
-    strings: ["Sharing Life Stories, Passing on Legacies"],
+    strings: ["Friendships with a Purpose"],
     typeSpeed: 80,
     loop: false
   });
