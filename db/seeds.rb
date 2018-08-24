@@ -85,8 +85,9 @@ name: "Film"
 
 {
 name: "Literature"
-}
+},
 
+{
 name: "Medicine"
 },
 
