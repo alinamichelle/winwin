@@ -132,8 +132,9 @@ User.create!([{
     location: "Lisbon",
     avatar_url: "youngperson",
     tagline: "Waffles are just pancakes with abs.",
-    biography: "<p>Introverted extrovert. I'm a performing arts scholar at RADA. I love hiking, traveling and exploring. Foodie fanatic and Twitter aficionado.</p>
-    <p>Introverted extrovert. I'm a performing arts scholar at RADA. I love hiking, traveling and exploring. Foodie fanatic and Twitter aficionado.</p>"
+    biography: "<p>Student at UC Berkeley in California majoring in film and psychology, minoring in computer programming, I have moved to Lisbon for year on a study abroad program.</p>
+    <p>An introverted extrovert, foodie fanatic and Twitter aficionado. I love keeping active, I'm a professional dancer and have done some gynmastics, and I love spending my free time hiking, traveling and exploring.</p>
+    <p>I have done a little traveling around Europe before moving and starting my year abroad in Lisbon. I cannot wait to explore the city and get to know the history and culture of the country better, and especially to try the food. I am obsessed with the pasteis de nata!</p>"
   },
 
   {
@@ -164,12 +165,16 @@ User.create!([{
     email: "4admin@admin.com",
     password: "admin",
     name: "Rosa Beltrán",
-    role: 69,
+    role: 71,
     birthday: "1949-11-23",
     location: "Lisbon",
     avatar_url: "fashionablewoman",
     tagline: "Don't just exist, live.",
-    biography: "I've lived quite a life. Worked as a model, photographer, and fashion designer for a number of big names before founding my own fashion house. No matter what Reese Witherspoon says, orange is definitely the new pink."
+    biography: "<p>I have lived quite a life.</p>
+    <p>At a young age on a trip to Paris I was scouted by a talent agent and became a model, working for big fashion houses on editorials and walking in fashion weeks around the world, for fashion houses such as Chanel, Burberry, Armani, and Yves Saint Laurent</p>
+    <p>I became fascinated by the fashion and film industry, and began later working as a photographer, an artist, a fashion consultant for films, and a fashion designer for a number of big fashion houses, before founding my own fashion house.</p>
+    <p>In my spare time I love to create new designs, watch movies, and walk around this beautiful city.</p>
+    <p>No matter what Reese Witherspoon says, orange is definitely the new pink.</p>"
   },
 
   {
